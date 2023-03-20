@@ -19,6 +19,9 @@ body {
 .col-6 {
   width: 50%;
 }
+.col-4 {
+  width: calc(100% / 3);
+}
 .banner-div-top {
   background-image: linear-gradient(
     to bottom,
@@ -65,17 +68,19 @@ body {
 }
 .polygon-blockchain-div {
   background-image: radial-gradient(
-    farthest-corner at 1128px 231px,
-    #c598eb 15%,
-    rgba(255, 255, 255, 0) 5%
+    farthest-corner at 1170px 135px,
+    #c598eb -30%,
+    rgba(255, 255, 255, 0) 35%
   );
+  padding-right: 40px;
+  border-radius: 10px;
 }
 .polygon-blockchain-content-out {
   display: flex;
   align-items: center;
 }
 .polygon-blockchain-content h2 {
-  font-size: 38px;
+  font-size: 37px;
   font-weight: 700;
 }
 .polygon-blockchain-content p {
@@ -86,15 +91,160 @@ body {
   width: 70%;
   height: auto;
 }
+.dashboard-div {
+  background-image: radial-gradient(
+    farthest-corner at 40px 151px,
+    #e1e6fc 0%,
+    rgba(255, 255, 255, 0) 68%
+  );
+  padding-left: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.swop-dashboard-content-out {
+  display: flex;
+  align-items: center;
+}
+.swop-dashboard-content h2 {
+  font-size: 37px;
+  font-weight: 700;
+}
+.swop-dashboard-content p {
+  font-size: 18px;
+  font-weight: 400;
+}
+#swop-dashboard {
+  width: 80%;
+  height: auto;
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0px 0px 20px #64646466;
+}
+.send-link-div {
+  background-image: radial-gradient(
+    farthest-corner at 1170px 135px,
+    #e4ecf1 -30%,
+    rgba(255, 255, 255, 0) 35%
+  );
+  padding-right: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.send-link-content-out {
+  display: flex;
+  align-items: center;
+}
+.send-link-content h2 {
+  font-size: 37px;
+  font-weight: 700;
+}
+.send-link-content p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 100px 0px;
+}
+.transaction img {
+  height: 80px;
+  width: auto;
+}
+.transaction h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px;
+}
+.transaction p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.transaction div {
+  width: 20%;
+}
 
+.home-how-it-work {
+  text-align: -webkit-center;
+}
+.home-networking {
+  text-align: -webkit-center;
+  margin-top: -50px;
+}
+.home-how-it-work h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.home-networking h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.background-level {
+  background: url("/image/backgroundlevel.png") no-repeat center;
+  background-size: cover;
+  height: 50px;
+  width: 71%;
+  margin: 20px 0px 0px;
+  margin-bottom: 20px;
+}
+.card-how-it {
+  border-radius: 15px;
+  height: 100%;
+  margin: 0px 20px;
+  padding: 5px 25px;
+  box-shadow: 0px 0px 31px rgb(0 0 0 / 12%);
+  background-color: #fff;
+}
+.card-how-it img {
+  height: 250px;
+  width: auto;
+}
+.card-how-it h5 {
+  text-align: left;
+  font-size: 20px;
+  margin: 0px 0px 0px;
+}
+.card-how-it p {
+  text-align: left;
+}
+.card-how-it span {
+  -webkit-text-stroke: 0.8px #000;
+  -webkit-text-fill-color: #fff;
+}
+.hide-pc-view,
+.number-icon {
+  display: none;
+}
 /* ============= Nav Design start ======================== */
+.nav-panel-scroll-bar {
+  width: 100%;
+  position: fixed;
+}
+#logo-swop:focus {
+  outline: none;
+}
+a#logo-swop img {
+  height: 30px;
+  width: auto;
+}
 .nav-panel {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  transition: 0.4s ease-out;
+  padding: 10px 0px 5px;
+}
+.nav-panel-scroll {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: #060606b3 !important;
+  z-index: 1;
 }
 .nav-panel ul {
   display: flex;
