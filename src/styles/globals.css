@@ -121,7 +121,8 @@ body {
   transform: translateX(-100%);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  box-shadow: 0px 0px 20px #64646466;
+  box-shadow: -6px 7px 20px #b7b7b73d;
+  margin-top: 20px;
 }
 .send-link-div {
   background-image: radial-gradient(
@@ -198,6 +199,10 @@ body {
   padding: 5px 25px;
   box-shadow: 0px 0px 31px rgb(0 0 0 / 12%);
   background-color: #fff;
+  transition: 0.4s ease;
+}
+.card-how-it:hover {
+  transform: scale(1.02);
 }
 .card-how-it img {
   height: 250px;
