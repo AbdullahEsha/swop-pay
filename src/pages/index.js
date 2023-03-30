@@ -97,32 +97,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container send-link-div">
-          <div className="row">
-            <div className="col-6">
-              <Image
-                src="/image/swop-pay-image.png"
-                alt="polygon-matic-badge"
-                height={764}
-                width={531}
-                id="polygon-matic-badge"
-              />
-            </div>
-            <div className="col-6 send-link-content-out">
-              <div className="send-link-content">
-                <h2>Send A Link To Get Paid</h2>
-                <p>
-                  Swop’s Flat Rectangle NFC’s are designed to be durable and
-                  simple to use. The Flat is great to put under any phone
-                  case(non-metal) Users can download our app to program any of
-                  our NFC’s with the click of a button. This will attach your
-                  profile to the NFC for easy sharing. You just tap the NFC on
-                  any compatible.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="container home-how-it-work">
           <h2>HOW ITS WORKS</h2>
           <p className="hide-mobile-view">
@@ -217,6 +191,32 @@ export default function Home() {
                   Tap the NFC and hold from 1-4 seconds on anyone’s phone you
                   meet and your profile will pop up. The other person does NOT
                   need the swop app for the NFC to work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container send-link-div">
+          <div className="row">
+            <div className="col-6">
+              <Image
+                src="/image/swop-pay-image.png"
+                alt="polygon-matic-badge"
+                height={764}
+                width={531}
+                id="polygon-matic-badge"
+              />
+            </div>
+            <div className="col-6 send-link-content-out">
+              <div className="send-link-content">
+                <h2>Send A Link To Get Paid</h2>
+                <p>
+                  Swop’s Flat Rectangle NFC’s are designed to be durable and
+                  simple to use. The Flat is great to put under any phone
+                  case(non-metal) Users can download our app to program any of
+                  our NFC’s with the click of a button. This will attach your
+                  profile to the NFC for easy sharing. You just tap the NFC on
+                  any compatible.
                 </p>
               </div>
             </div>

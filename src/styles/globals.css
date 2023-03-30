@@ -74,6 +74,7 @@ body {
   );
   padding-right: 40px;
   border-radius: 10px;
+  margin-top: 25px;
 }
 .polygon-blockchain-content-out {
   display: flex;
