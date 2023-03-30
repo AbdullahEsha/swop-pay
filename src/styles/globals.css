@@ -254,7 +254,7 @@ a#logo-swop img {
 .nav-panel ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 .nav-panel ul li {
   list-style: none;
@@ -262,12 +262,24 @@ a#logo-swop img {
   align-items: center;
 }
 .nav-panel ul li a {
-  color: #fff;
-  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  display: flex;
-  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  line-height: 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+.nav-panel ul li a:after {
+  transition: all ease-in-out 0.4s;
+  background: none repeat scroll 0 0 #ffffff;
+  content: "";
+  display: block;
+  height: 1.5px;
+  width: 0;
+}
+.nav-panel ul li a:hover:after {
+  width: 100%;
 }
 /* ============= Nav Design end ======================== */
 
