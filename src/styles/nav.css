@@ -1,0 +1,56 @@
+.nav-panel-scroll-bar {
+  width: 100%;
+  position: fixed;
+}
+#logo-swop:focus {
+  outline: none;
+}
+a#logo-swop img {
+  height: 30px;
+  width: auto;
+}
+.nav-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s ease-out;
+  padding: 10px 0px 5px;
+}
+.nav-panel-scroll {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: #060606b3 !important;
+  z-index: 1;
+}
+.nav-panel ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.nav-panel ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-panel ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  line-height: 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+.nav-panel ul li a:after {
+  transition: all ease-in-out 0.4s;
+  background: none repeat scroll 0 0 #ffffff;
+  content: "";
+  display: block;
+  height: 1.5px;
+  width: 0;
+}
+.nav-panel ul li a:hover:after {
+  width: 100%;
+}

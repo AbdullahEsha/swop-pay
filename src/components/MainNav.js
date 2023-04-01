@@ -31,31 +31,33 @@ const MainNav = () => {
           </Link>
           <ul>
             <li>
-              <Link href="/">Dashboard</Link>
+              <Link href="/dashboard" target="_blank">
+                Dashboard
+              </Link>
             </li>
             <li>
-              <Link href="/">Profile</Link>
+              <Link href="/profile">Profile</Link>
             </li>
             <li>
-              <Link href="/">Invoice</Link>
+              <Link href="/invoice">Invoice</Link>
             </li>
             <li>
-              <Link href="/">Order</Link>
+              <Link href="/orders">Orders</Link>
             </li>
             <li>
-              <Link href="/">Products</Link>
+              <Link href="/products">Products</Link>
             </li>
             <li>
-              <Link href="/">Coupon</Link>
+              <Link href="/coupon">Coupon</Link>
             </li>
             <li>
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/#">
                 <BsPersonCircle size="25" />
               </Link>
             </li>
