@@ -244,7 +244,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
-  padding: 10px;
+  padding: 15px;
   width: 18%;
   border-radius: 15px;
 }
@@ -307,4 +307,85 @@ body {
   padding: 20px;
   box-shadow: 0px 0px 30px #dddddd75;
   border-radius: 15px;
+  position: relative;
+  width: 40%;
+}
+.dashboard-home-card2 h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px;
+}
+.dashboard-home-card2 p {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0px;
+}
+.dashboard-home-card2-right-status {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #0bb13a;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.dashboard-home-card2-right-status h5 {
+  margin: 0px;
+  font-size: 15px;
+}
+.dashboard-home-card2-right-status p {
+  margin: 0px;
+  font-size: 9px;
+}
+.dashboard-home-card3-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 0px 20px;
+}
+.dashboard-home-card3-product-name {
+  width: 50%;
+}
+.dashboard-home-card3-price {
+  width: 30%;
+}
+.dashboard-home-card3-exp {
+  width: 20%;
+}
+.dashboard-home-card3-product-name b {
+  font-weight: 500;
+}
+.dashboard-home-card3 {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #dddddd75;
+  border-radius: 15px;
+  width: 34%;
+  position: relative;
+}
+.dashboard-home-card3 h3 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.dashboard-home-card3-price span {
+  background-color: #cbe9f2;
+  color: #0ec0f5;
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: 400;
+}
+.dashboard-home-card3-exp span {
+  font-size: 14px;
+}
+.commonBtn {
+  background-image: linear-gradient(to right, #55b6ff, #797eff);
+  position: absolute;
+  bottom: -18px;
+  padding: 8px 50px;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.commonBtn a {
+  text-decoration: none;
+  color: #fff;
 }
