@@ -4,6 +4,11 @@ import useWindowDimensions from "../components/useWindowDimensions";
 import { BsPlusLg } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import CommonBtn from "@/components/CommonBtn";
+import Box from "@mui/material/Box";
+import { AiFillPlusCircle } from "react-icons/ai";
+import { DataGrid } from "@mui/x-data-grid";
+import ProductCard from "@/components/ProductCard";
+import QrCodeScan from "@/components/QrCodeScan";
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
@@ -47,6 +52,76 @@ const Dashboard = () => {
       },
     ],
   });
+
+  const columns = [
+    {
+      field: "trakingNo",
+      headerName: "Traking no",
+      width: 100,
+    },
+    {
+      field: "productName",
+      headerName: "Product Name",
+      width: 130,
+    },
+    {
+      field: "price",
+      headerName: "Price ($)",
+      type: "number",
+      width: 70,
+    },
+    {
+      field: "totalOrder",
+      headerName: "Total Order",
+      type: "number",
+      width: 110,
+    },
+    {
+      field: "totalAmount",
+      headerName: "Total Amount ($)",
+      width: 120,
+      type: "number",
+      valueGetter: (params) => `${params.row.price * params.row.totalOrder}`,
+    },
+  ];
+
+  const rows = [
+    {
+      id: 1,
+      trakingNo: "#12209367",
+      productName: "Watch JET",
+      price: 68,
+      totalOrder: 27,
+    },
+    {
+      id: 2,
+      trakingNo: "#12209367",
+      productName: "Watch JET",
+      price: 67,
+      totalOrder: 27,
+    },
+    {
+      id: 3,
+      trakingNo: "#12209367",
+      productName: "Watch JET",
+      price: 69,
+      totalOrder: 27,
+    },
+    {
+      id: 4,
+      trakingNo: "#12209367",
+      productName: "Watch JET",
+      price: 65,
+      totalOrder: 27,
+    },
+    {
+      id: 5,
+      trakingNo: "#12209367",
+      productName: "Watch JET",
+      price: 60,
+      totalOrder: 27,
+    },
+  ];
 
   return (
     <div className="dashboard-container">
@@ -128,9 +203,23 @@ const Dashboard = () => {
             <p className="dashboard-home-card3-price">
               <span>$44.56</span>
             </p>
-            <p className="dashboard-home-card3-exp">
+            <div className="dashboard-home-card3-exp">
               <span>7/11/2022</span>
-            </p>
+              <div className="dashboard-home-card3-exp-icon">
+                <Image
+                  src="/image/copy-icon.png"
+                  alt="copy-icon"
+                  height={13}
+                  width={11}
+                />
+                <Image
+                  src="/image/qr-code-icon.png"
+                  alt="qr-code-icon"
+                  height={13}
+                  width={13}
+                />
+              </div>
+            </div>
           </div>
           <div className="dashboard-home-card3-content">
             <p className="dashboard-home-card3-product-name">
@@ -139,9 +228,23 @@ const Dashboard = () => {
             <p className="dashboard-home-card3-price">
               <span>$44.56</span>
             </p>
-            <p className="dashboard-home-card3-exp">
+            <div className="dashboard-home-card3-exp">
               <span>7/11/2022</span>
-            </p>
+              <div className="dashboard-home-card3-exp-icon">
+                <Image
+                  src="/image/copy-icon.png"
+                  alt="copy-icon"
+                  height={13}
+                  width={11}
+                />
+                <Image
+                  src="/image/qr-code-icon.png"
+                  alt="qr-code-icon"
+                  height={13}
+                  width={13}
+                />
+              </div>
+            </div>
           </div>
           <div className="dashboard-home-card3-content">
             <p className="dashboard-home-card3-product-name">
@@ -150,16 +253,122 @@ const Dashboard = () => {
             <p className="dashboard-home-card3-price">
               <span>$44.56</span>
             </p>
-            <p className="dashboard-home-card3-exp">
+            <div className="dashboard-home-card3-exp">
               <span>7/11/2022</span>
-            </p>
+              <div className="dashboard-home-card3-exp-icon">
+                <Image
+                  src="/image/copy-icon.png"
+                  alt="copy-icon"
+                  height={13}
+                  width={11}
+                />
+                <Image
+                  src="/image/qr-code-icon.png"
+                  alt="qr-code-icon"
+                  height={13}
+                  width={13}
+                />
+              </div>
+            </div>
           </div>
-          <CommonBtn btnlabel={"Add More"} link={"/add-more"} />
+          <CommonBtn btnlabel={"Add More"} url={"/add-more"} />
         </div>
+        <QrCodeScan qrCode="footerQrCode.png" />
         <div className="dashboard-home-card4">
           <h3>Recent Orders</h3>
+          <div className="dashboard-home-card4-data">
+            <Box sx={{ height: 650, width: "100%" }}>
+              <DataGrid
+                rows={rows}
+                columns={columns}
+                initialState={{
+                  pagination: {
+                    paginationModel: {
+                      pageSize: 5,
+                    },
+                  },
+                }}
+                pageSizeOptions={[5]}
+                disableRowSelectionOnClick
+              />
+            </Box>
+          </div>
+          <CommonBtn btnlabel={"View Orders"} url={"/view-orders"} />
         </div>
-        <div className="dashboard-home-card5"></div>
+        <div className="dashboard-home-card5">
+          <div className="dashboard-home-card5-top">
+            <div className="grid-3">
+              <ProductCard
+                id="624cd765a5d835001615a6d3"
+                imageUrl="/image/product/product-1.png"
+                name="Swop NFC Band"
+                description="Good sound quality and perfect bass provide to you and long lasting."
+                price={`$${29}`}
+                quantity={`${23}`}
+              />
+              <ProductCard
+                id="624cd765a5d835001615a6d3"
+                imageUrl="/image/product/product-1.png"
+                name="Swop NFC Band"
+                description="Good sound quality and perfect bass provide to you and long lasting."
+                price={`$${29}`}
+                quantity={`${23}`}
+              />
+              <ProductCard
+                id="624cd765a5d835001615a6d3"
+                imageUrl="/image/product/product-1.png"
+                name="Swop NFC Band"
+                description="Good sound quality and perfect bass provide to you and long lasting."
+                price={`$${29}`}
+                quantity={`${23}`}
+              />
+              <div className="product-card" style={{ minHeight: "223px" }}>
+                <a href="/products/add-product">
+                  <div className="add-product">
+                    <h5>Add Product</h5>
+                    <AiFillPlusCircle size={30} color="#f2f2f2" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="dashboard-home-card5-bottom">
+            <div className="coupon-field">
+              <Image
+                src="/image/coupon.png"
+                height={68}
+                width={90}
+                className="coupon-image"
+              />
+              <div className="coupon-offer">
+                <p>20% OFF</p>
+                <label>0x123shsjkadff</label>
+              </div>
+              <div className="coupon-dateTime">
+                <p>EXP 1/6/2022</p>
+                <p>Receipt: 1</p>
+              </div>
+            </div>
+            <div className="coupon-field">
+              <Image
+                src="/image/coupon.png"
+                height={68}
+                width={90}
+                className="coupon-image"
+              />
+              <div className="coupon-offer">
+                <p>20% OFF</p>
+                <label>0x123shsjkadff</label>
+              </div>
+              <div className="coupon-dateTime">
+                <p>EXP 1/6/2022</p>
+                <p>Receipt: 1</p>
+              </div>
+            </div>
+            <br />
+            <CommonBtn btnlabel={"Add More"} url={"/add-more"} />
+          </div>
+        </div>
       </div>
     </div>
   );

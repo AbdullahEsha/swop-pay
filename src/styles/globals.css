@@ -29,6 +29,12 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  text-align: -webkit-center;
+}
 .col-6 {
   width: 50%;
 }
@@ -272,6 +278,7 @@ body {
   flex-wrap: wrap;
   margin: 25px auto;
   justify-content: space-between;
+  gap: 40px;
 }
 .dashboard-home-card1-list-container {
   width: 100%;
@@ -341,6 +348,10 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   padding: 0px 20px;
+  align-items: center;
+}
+.dashboard-home-card3-content p {
+  margin: 12px 0px;
 }
 .dashboard-home-card3-product-name {
   width: 50%;
@@ -350,6 +361,16 @@ body {
 }
 .dashboard-home-card3-exp {
   width: 20%;
+}
+.dashboard-home-card3-exp-icon {
+  display: flex;
+  gap: 5px;
+}
+.dashboard-home-card3-exp-icon img {
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  height: 25px;
+  width: auto;
 }
 .dashboard-home-card3-product-name b {
   font-weight: 500;
@@ -388,4 +409,141 @@ body {
 .commonBtn a {
   text-decoration: none;
   color: #fff;
+}
+.dashboard-home-card4 {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #dddddd75;
+  border-radius: 15px;
+  width: 48%;
+  padding: 20px;
+  position: relative;
+}
+.dashboard-home-card4 h3 {
+  margin: 0px;
+}
+.dashboard-home-card4-data .css-1usso8h-MuiDataGrid-root {
+  border: none;
+}
+.dashboard-home-card5 {
+  display: flex;
+  width: 48%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.dashboard-home-card5-top {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #dddddd75;
+  border-radius: 15px;
+  padding: 20px;
+}
+.dashboard-home-card5-bottom {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #dddddd75;
+  border-radius: 15px;
+  padding: 20px;
+  align-self: flex-end;
+  position: relative;
+}
+.product-card {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 31px rgba(0, 0, 0, 0.12);
+  transition: 0.4s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+.product-card a {
+  text-decoration: none;
+  color: #000;
+}
+.product-card img {
+  height: auto;
+  width: 60%;
+}
+.product-card h5 {
+  margin: 0;
+}
+.product-card p {
+  margin: 5px 0;
+  font-size: 11px;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.product-price label {
+  background-color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+.product-price .left {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.product-price .right {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.add-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.add-product svg {
+  margin-top: 10px;
+}
+.coupon-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0px;
+}
+.coupon-offer {
+  display: block;
+  width: 55%;
+}
+.coupon-dateTime {
+  display: block;
+}
+.coupon-offer p {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.coupon-offer label {
+  font-size: 11px;
+}
+.coupon-dateTime p {
+  margin: 0px;
+  font-size: 14px;
+}
+.coupon-field img {
+  height: 40px;
+  width: auto;
+}
+.modal-qr-code-scan {
+  /* display: none;  */
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal-qr-code-scan img {
+  height: 120px;
+  width: auto;
 }

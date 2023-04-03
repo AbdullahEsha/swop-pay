@@ -4,7 +4,7 @@ const CommonBtn = (props) => {
   return (
     <>
       <div className="commonBtn">
-        <Link href={`${props.link}`}>{props.btnlabel}</Link>
+        <Link href={`${props.url}`}>{props.btnlabel}</Link>
       </div>
     </>
   );
