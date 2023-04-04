@@ -8,9 +8,11 @@ import { RxDragHandleDots2 } from "react-icons/rx";
 import { IoTicketOutline, IoIdCardOutline } from "react-icons/io5";
 import { RiErrorWarningLine } from "react-icons/ri";
 import useWindowDimensions from "./useWindowDimensions";
+import { useRouter } from "next/router";
 
 const SideBar = () => {
   const { width } = useWindowDimensions();
+  const router = useRouter();
 
   return (
     <>
@@ -18,62 +20,98 @@ const SideBar = () => {
         <div className="side-bar">
           <div className="side-bar-top">
             <Link
-              href="https://swopnew.netlify.app"
+              href="https://swop-pay.netlify.app"
               target="_blank"
-              className="swop-logo"
+              className="swop-pay-logo"
             >
               <Image
-                src="/image/dapp-logo.png"
-                alt="dashboard-logo"
+                src="/image/swop-pay-logo.png"
+                alt="swop-pay-logo"
                 height={32}
                 width={200}
                 id="dashboard-logo-size"
               />
             </Link>
             <ul>
-              <li id="active-menu">
-                <Link href="/dapp-store">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "dashboard" && "active-menu"
+                }`}
+              >
+                <Link href="/dashboard">
                   <FaChartPie size={20} />
                   Dashboard
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "profile" && "active-menu"
+                }`}
+              >
+                <Link href="/profile">
                   <BsPeopleFill size={20} /> Profile
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "invoice" && "active-menu"
+                }`}
+              >
+                <Link href="/invoice">
                   <MdOutlineEventNote size={20} /> Invoice
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "orders" && "active-menu"
+                }`}
+              >
+                <Link href="/orders">
                   <RxDragHandleDots2 size={20} /> Orders
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "products" && "active-menu"
+                }`}
+              >
+                <Link href="/products">
                   <BsBoxSeam size={20} /> Products
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "mint" && "active-menu"
+                }`}
+              >
+                <Link href="/mint">
                   <IoIdCardOutline size={20} /> Mint
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "coupon" && "active-menu"
+                }`}
+              >
+                <Link href="/coupon">
                   <IoTicketOutline size={20} /> Coupon
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "about" && "active-menu"
+                }`}
+              >
+                <Link href="/about">
                   <RiErrorWarningLine size={20} /> About
                 </Link>
               </li>
-              <li>
-                <Link href="/">
+              <li
+                id={`${
+                  router.pathname.split("/")[1] === "contact" && "active-menu"
+                }`}
+              >
+                <Link href="/contact">
                   <MdSupportAgent size={20} /> Contact
                 </Link>
               </li>

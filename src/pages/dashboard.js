@@ -207,16 +207,21 @@ const Dashboard = () => {
               <span>7/11/2022</span>
               <div className="dashboard-home-card3-exp-icon">
                 <Image
+                  src="/image/qr-code-icon.png"
+                  alt="qr-code-icon"
+                  height={25}
+                  width={27}
+                  onClick={() =>
+                    (document.querySelector(
+                      ".modal-qr-code-scan-out"
+                    ).style.display = "block")
+                  }
+                />
+                <Image
                   src="/image/copy-icon.png"
                   alt="copy-icon"
                   height={13}
                   width={11}
-                />
-                <Image
-                  src="/image/qr-code-icon.png"
-                  alt="qr-code-icon"
-                  height={13}
-                  width={13}
                 />
               </div>
             </div>
@@ -232,48 +237,29 @@ const Dashboard = () => {
               <span>7/11/2022</span>
               <div className="dashboard-home-card3-exp-icon">
                 <Image
-                  src="/image/copy-icon.png"
-                  alt="copy-icon"
-                  height={13}
-                  width={11}
-                />
-                <Image
                   src="/image/qr-code-icon.png"
                   alt="qr-code-icon"
-                  height={13}
-                  width={13}
+                  height={25}
+                  width={27}
+                  onClick={() =>
+                    (document.querySelector(
+                      ".modal-qr-code-scan-out"
+                    ).style.display = "block")
+                  }
                 />
-              </div>
-            </div>
-          </div>
-          <div className="dashboard-home-card3-content">
-            <p className="dashboard-home-card3-product-name">
-              <b>JBL Headphone</b>
-            </p>
-            <p className="dashboard-home-card3-price">
-              <span>$44.56</span>
-            </p>
-            <div className="dashboard-home-card3-exp">
-              <span>7/11/2022</span>
-              <div className="dashboard-home-card3-exp-icon">
                 <Image
                   src="/image/copy-icon.png"
                   alt="copy-icon"
                   height={13}
                   width={11}
                 />
-                <Image
-                  src="/image/qr-code-icon.png"
-                  alt="qr-code-icon"
-                  height={13}
-                  width={13}
-                />
               </div>
             </div>
           </div>
+          <QrCodeScan qrCode="footerQrCode.png" link="www.swopme.co" />
           <CommonBtn btnlabel={"Add More"} url={"/add-more"} />
         </div>
-        <QrCodeScan qrCode="footerQrCode.png" />
+
         <div className="dashboard-home-card4">
           <h3>Recent Orders</h3>
           <div className="dashboard-home-card4-data">
@@ -298,30 +284,17 @@ const Dashboard = () => {
         <div className="dashboard-home-card5">
           <div className="dashboard-home-card5-top">
             <div className="grid-3">
-              <ProductCard
-                id="624cd765a5d835001615a6d3"
-                imageUrl="/image/product/product-1.png"
-                name="Swop NFC Band"
-                description="Good sound quality and perfect bass provide to you and long lasting."
-                price={`$${29}`}
-                quantity={`${23}`}
-              />
-              <ProductCard
-                id="624cd765a5d835001615a6d3"
-                imageUrl="/image/product/product-1.png"
-                name="Swop NFC Band"
-                description="Good sound quality and perfect bass provide to you and long lasting."
-                price={`$${29}`}
-                quantity={`${23}`}
-              />
-              <ProductCard
-                id="624cd765a5d835001615a6d3"
-                imageUrl="/image/product/product-1.png"
-                name="Swop NFC Band"
-                description="Good sound quality and perfect bass provide to you and long lasting."
-                price={`$${29}`}
-                quantity={`${23}`}
-              />
+              {[...Array(4)].map((x, i) => (
+                <ProductCard
+                  key={i}
+                  id="624cd765a5d835001615a6d3"
+                  imageUrl="/image/product/product-1.png"
+                  name="Swop NFC Band"
+                  description="Good sound quality and perfect bass provide to you and long lasting."
+                  price={`$${29}`}
+                  quantity={`${23}`}
+                />
+              ))}
               <div className="product-card" style={{ minHeight: "223px" }}>
                 <a href="/products/add-product">
                   <div className="add-product">
