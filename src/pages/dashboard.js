@@ -5,7 +5,7 @@ import { BsPlusLg } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import CommonBtn from "@/components/CommonBtn";
 import Box from "@mui/material/Box";
-import { AiFillPlusCircle } from "react-icons/ai";
+import { AiFillPlusCircle, AiFillCopy, AiOutlineQrcode } from "react-icons/ai";
 import { DataGrid } from "@mui/x-data-grid";
 import ProductCard from "@/components/ProductCard";
 import QrCodeScan from "@/components/QrCodeScan";
@@ -206,23 +206,15 @@ const Dashboard = () => {
             <div className="dashboard-home-card3-exp">
               <span>7/11/2022</span>
               <div className="dashboard-home-card3-exp-icon">
-                <Image
-                  src="/image/qr-code-icon.png"
-                  alt="qr-code-icon"
-                  height={25}
-                  width={27}
+                <AiOutlineQrcode
+                  size={20}
                   onClick={() =>
                     (document.querySelector(
                       ".modal-qr-code-scan-out"
                     ).style.display = "block")
                   }
                 />
-                <Image
-                  src="/image/copy-icon.png"
-                  alt="copy-icon"
-                  height={13}
-                  width={11}
-                />
+                <AiFillCopy size={20} />
               </div>
             </div>
           </div>
@@ -236,23 +228,15 @@ const Dashboard = () => {
             <div className="dashboard-home-card3-exp">
               <span>7/11/2022</span>
               <div className="dashboard-home-card3-exp-icon">
-                <Image
-                  src="/image/qr-code-icon.png"
-                  alt="qr-code-icon"
-                  height={25}
-                  width={27}
+                <AiOutlineQrcode
+                  size={20}
                   onClick={() =>
                     (document.querySelector(
                       ".modal-qr-code-scan-out"
                     ).style.display = "block")
                   }
                 />
-                <Image
-                  src="/image/copy-icon.png"
-                  alt="copy-icon"
-                  height={13}
-                  width={11}
-                />
+                <AiFillCopy size={20} />
               </div>
             </div>
           </div>

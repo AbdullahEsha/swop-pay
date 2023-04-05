@@ -1,9 +1,11 @@
 import React from "react";
 import { RiFolderUploadFill } from "react-icons/ri";
 import { BiMessageSquareEdit } from "react-icons/bi";
+import { BsQrCode } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import QrCodeScan from "@/components/QrCodeScan";
 
 const Product = () => {
   return (
@@ -140,6 +142,28 @@ const Product = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="product-upload-container-3">
+          <div className="product-upload-container-left">
+            <input type="button" value="Save" />
+            <input type="button" value="Preview" />
+            <input type="button" value="Delete" />
+          </div>
+          <QrCodeScan qrCode="footerQrCode.png" link="www.swopme.co" />
+          <div className="product-upload-container-right">
+            <button
+              onClick={() =>
+                (document.querySelector(
+                  ".modal-qr-code-scan-out"
+                ).style.display = "block")
+              }
+            >
+              <BsQrCode size={20} />
+            </button>
+
+            <input type="button" value="Copy URL" />
+            <input type="button" value="Export" />
           </div>
         </div>
       </div>

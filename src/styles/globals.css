@@ -395,12 +395,13 @@ body {
   display: flex;
   gap: 5px;
 }
-.dashboard-home-card3-exp-icon img {
+.dashboard-home-card3-exp-icon svg {
   border: 3px solid #ddd;
   border-radius: 5px;
   height: 25px;
   width: auto;
   cursor: pointer;
+  background-color: #ddd;
 }
 .dashboard-home-card3-product-name b {
   font-weight: 500;
@@ -694,7 +695,7 @@ body {
   width: 32%;
 }
 .product-image-upload {
-  width: 25%;
+  width: 38%;
   border: 1px solid #a7a7a7;
   border-radius: 17px;
 }
@@ -793,7 +794,7 @@ body {
   width: 110px;
 }
 .product-view {
-  width: 74%;
+  width: 60%;
   padding: 10px;
   background-color: #fff;
   border-radius: 15px;
@@ -802,7 +803,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 25px auto 50px;
+  margin: 25px auto;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px;
@@ -810,4 +811,39 @@ body {
 .product-upload-container-2 h3 {
   margin-top: 0px;
 }
+.product-upload-container-3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 50px;
+  /* padding: 20px; */
+}
+.product-upload-container-left,
+.product-upload-container-right {
+  display: flex;
+  gap: 10px;
+}
+.product-upload-container-left input {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  box-shadow: 0px 0px 20px #e4e4e452;
+}
+.product-upload-container-right input {
+  background-image: linear-gradient(to right, #55b6ff, #797eff);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #e4e4e452;
+  color: #fff;
+}
+.product-upload-container-right button {
+  background-image: linear-gradient(to right, #55b6ff, #797eff);
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #e4e4e452;
+  color: #fff;
+}
+
 /*=========================================== Product Page End ====================================== */
