@@ -36,6 +36,11 @@ body {
   gap: 15px;
   text-align: -webkit-center;
 }
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
 .grid-5 {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -59,6 +64,13 @@ body {
 }
 .commonBtn a {
   text-decoration: none;
+  color: #fff;
+}
+.commonBtn2 {
+  background-image: linear-gradient(to right, #55b6ff, #797eff);
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: none;
   color: #fff;
 }
 .col-6 {
@@ -847,3 +859,189 @@ body {
 }
 
 /*=========================================== Product Page End ====================================== */
+
+/* ========================================= Mint Page Start ======================================== */
+
+.mint-card {
+  position: relative;
+  padding: 15px 15px 25px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+  transition: 0.4s ease;
+}
+.mint-card:hover {
+  transform: scale(1.05);
+}
+.mint-card a {
+  text-decoration: none;
+  color: #000;
+}
+.mint-card img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+.mint-card h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+.mint-card h5 {
+  margin: 0;
+  font-size: 22px;
+  color: #1c83e5;
+  font-weight: 600;
+}
+.mint-card p {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.mint-card span {
+  position: absolute;
+  right: 15px;
+  bottom: 12px;
+  background-color: #4b93ff;
+  padding: 3px 30px;
+  border-radius: 15px;
+  color: #fff;
+}
+.mint-container {
+  position: relative;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px 20px 50px;
+  border-radius: 15px;
+}
+.create-mint-container {
+  padding: 20px 25%;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 50px auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+}
+.mint-new-item-collection {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a7a7a7;
+  padding: 5px 0px;
+}
+.mint-new-item-in {
+  width: -webkit-fill-available;
+  padding: 0px 5px;
+}
+.mint-new-item-in h3 {
+  margin: 0px;
+  line-height: 20px;
+}
+.mint-new-item-in p {
+  margin: 0px;
+}
+.mint-new-item-collection svg {
+  width: 22px;
+}
+.create-mint-hr {
+  margin: 20px 0px;
+  border-top: 0.5px solid #ddd;
+}
+
+/* ========================================= Mint Page End ======================================== */
+
+/* ========================================== Coupon page Start ===================================  */
+.promocode-card {
+  box-shadow: 0px 0px 30px #ddd;
+  border-radius: 15px;
+  margin: 50px auto;
+  background-color: #fff;
+}
+.promocode-background {
+  background-color: rgba(0, 236, 174, 0.12);
+  text-align: center;
+  padding: 50px 0px;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+}
+.promocode-background img {
+  height: 200px;
+  width: auto;
+}
+.promocode-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+.promocode-inside {
+  width: 50%;
+  padding: 0px 15px;
+}
+.promocode-bottom button {
+  background-image: linear-gradient(to right, #55b6ff, #797eff);
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+.promocode-inside p {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.promocode-inside input[type="text"],
+.promocode-inside input[type="date"],
+.promocode-inside input[type="file"] {
+  padding: 8px 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 0.5px solid #ebebeb;
+}
+.promocode-inside textarea {
+  padding: 8px 20px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 0.5px solid #ebebeb;
+}
+.promocode-inside textarea:focus,
+.promocode-inside input[type="date"]:focus,
+.promocode-inside input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid rgb(184, 184, 184);
+}
+input[type="radio"]:checked:after {
+  background: #00e2b3;
+  box-shadow: 0px 0px 0.2rem #00e2b5c7;
+  border: 2px solid rgb(255, 255, 255);
+}
+input[type="checkbox"]:checked {
+  background: #00e2b3;
+  border-color: #00e2b3;
+}
+input[type="checkbox"]:focus {
+  border-color: #00e2b3;
+}
+input[type="radio"]:focus {
+  border-color: #00e2b3;
+}
+input[type="radio"]:checked {
+  border-color: #00e2b3;
+}
+/*============================== Coupon Page End ============================*/

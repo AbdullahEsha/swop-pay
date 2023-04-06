@@ -6,7 +6,9 @@ const Layout = (props) => {
     <main>
       <div className="dashboard-main-container">
         <SideBar />
-        <div className="main-container">{props.children}</div>
+        <div className="main-container">
+          <div className="dashboard-container">{props.children}</div>
+        </div>
       </div>
     </main>
   );

@@ -125,7 +125,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="dashboard-container">
+    <>
       <div className="dashboard-home">
         <div className="dashboard-home-card1">
           <Image src="/image/travis.png" alt="travis" height={66} width={66} />
@@ -330,7 +330,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
