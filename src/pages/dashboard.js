@@ -9,6 +9,7 @@ import { AiFillPlusCircle, AiFillCopy, AiOutlineQrcode } from "react-icons/ai";
 import { DataGrid } from "@mui/x-data-grid";
 import ProductCard from "@/components/ProductCard";
 import QrCodeScan from "@/components/QrCodeScan";
+import Link from "next/link";
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
@@ -280,12 +281,12 @@ const Dashboard = () => {
                 />
               ))}
               <div className="product-card" style={{ minHeight: "223px" }}>
-                <a href="/products/add-product">
+                <Link href="/products/add-product">
                   <div className="add-product">
                     <h5>Add Product</h5>
                     <AiFillPlusCircle size={30} color="#f2f2f2" />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -293,6 +294,7 @@ const Dashboard = () => {
             <div className="coupon-field">
               <Image
                 src="/image/coupon.png"
+                alt="coupon"
                 height={68}
                 width={90}
                 className="coupon-image"
@@ -309,6 +311,7 @@ const Dashboard = () => {
             <div className="coupon-field">
               <Image
                 src="/image/coupon.png"
+                alt="coupon"
                 height={68}
                 width={90}
                 className="coupon-image"
