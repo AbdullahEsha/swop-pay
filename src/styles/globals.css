@@ -9,6 +9,9 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* =============================== Common CSS Start ============================ */
+
 .container {
   width: 1200px;
   margin: 0px auto;
@@ -79,6 +82,74 @@ body {
 .col-4 {
   width: calc(100% / 3);
 }
+
+.table {
+  margin-top: 25px;
+}
+.table-head {
+  display: flex;
+  text-align: center;
+}
+.table-head p {
+  color: #6e7174;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.table-body {
+  display: flex;
+  text-align: center;
+  border-top: 1px solid #bfbfbf;
+  align-items: center;
+}
+.table-body p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 7px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 50px auto;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.filter p {
+  font-weight: 500;
+}
+.filter select {
+  text-align: center;
+  border: 1px solid #bfbfbf;
+  color: #96a5b8;
+  font-weight: 500;
+}
+.filter select:focus {
+  outline: none;
+}
+.filter button,
+.filter select {
+  height: 35px;
+  width: 130px;
+  border-radius: 5px;
+}
+.filter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* =============================== Common CSS End ============================ */
+
 .banner-div-top {
   background-image: linear-gradient(
     to bottom,
@@ -1044,4 +1115,159 @@ input[type="radio"]:focus {
 input[type="radio"]:checked {
   border-color: #00e2b3;
 }
-/*============================== Coupon Page End ============================*/
+/* ============================== Coupon Page End ============================ */
+
+/* ============================= Contact Page Start ========================= */
+
+.contact-container-out {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contact-container {
+  background-color: #fff;
+  padding: 25px 120px;
+  border-radius: 15px;
+}
+.contact-container h1 {
+  text-align: center;
+}
+.contact-container p {
+  text-align: center;
+}
+.contact-form-out {
+  display: flex;
+  align-items: center;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.contact-form input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+.contact-form textarea {
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+.contact-form button {
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0px 20px 20px #00000034;
+  border: 1px solid #ddd;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+  outline: none;
+}
+.contact-image {
+  display: flex;
+  align-items: center;
+}
+.contact-image img {
+  height: 100%;
+  width: auto;
+}
+
+/* ============================= Contact Page End =========================== */
+
+/* ============================= About Page Start =========================== */
+
+/* ============================= About Page End ============================= */
+
+/* ============================= Invoice Page Start ========================= */
+
+.invoice-top-panel {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.invoice-top-panel input {
+  background-color: #f1f8ff;
+  height: 45px;
+  width: calc(100% / 2.5);
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 0;
+  font-size: 16px;
+}
+.invoice-top-panel input:focus {
+  outline: none;
+}
+.invoice-date {
+  width: 10%;
+}
+.invoice-name {
+  width: 20%;
+}
+.invoice-orderNo {
+  width: 10%;
+}
+.invoice-address {
+  width: 25%;
+}
+.invoice-url {
+  width: 25%;
+}
+.invoice-total {
+  width: 10%;
+}
+
+/* ============================= Invoice Page End ========================= */
+
+/* ============================= Order Page Start ========================= */
+
+.order-top-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-top-panel input {
+  background-color: #f1f8ff;
+  height: 45px;
+  width: calc(100% / 2.5);
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 0;
+  font-size: 16px;
+}
+.order-top-panel input:focus {
+  outline: none;
+}
+
+.order-orderNo {
+  width: 10%;
+}
+.order-name {
+  width: 20%;
+}
+.order-product {
+  width: 25%;
+}
+.order-price {
+  width: 10%;
+}
+.order-date {
+  width: 20%;
+}
+.order-status {
+  width: 15%;
+}
+.order-status span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* ============================= Order Page End ========================= */

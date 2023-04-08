@@ -9,6 +9,7 @@ const Index = () => {
         <div className="grid-4">
           {[...Array(8)].map((x, i) => (
             <MintCard
+              key={i}
               id="624cd765a5d835001615a6d3"
               imageUrl="/image/mint/mint-1.png"
               name="Lorem ipsum dol..."
