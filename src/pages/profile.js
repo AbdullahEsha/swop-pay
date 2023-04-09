@@ -1,7 +1,103 @@
-import React from "react";
+import CommonBtn2 from "@/components/CommonBtn2";
+import Image from "next/image";
 
 const Profile = () => {
-  return <div>profile</div>;
+  return (
+    <>
+      <div className="profile-container">
+        <div className="row">
+          <div className="col-6">
+            <h4>Phone</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>Website</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>City</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>Zipcode</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>Shipping Cost</h4>
+            <input type="text" placeholder="Input text here" />
+          </div>
+          <div className="col-6">
+            <h4>Email</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>Street</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>State/Providence</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>Country</h4>
+            <input type="text" placeholder="Input text here" />
+            <h4>Acceptable Blockchains For Payment</h4>
+            <div className="option-container">
+              <div className="option">
+                <Image
+                  src="/image/polygon.png"
+                  alt="polygon"
+                  height={21}
+                  width={21}
+                />{" "}
+                <p>POLYGON</p>
+              </div>
+              <div className="option">
+                <Image
+                  src="/image/apple-pay.png"
+                  alt="apple-pay"
+                  height={21}
+                  width={21}
+                />{" "}
+                <p>Apple Pay</p>
+              </div>
+              <div className="option">
+                <Image
+                  src="/image/ethereum.png"
+                  alt="ethereum"
+                  height={21}
+                  width={21}
+                />{" "}
+                <p>ETH</p>
+              </div>
+            </div>
+            <h4>Acceptable Tockens For Blockchains</h4>
+            <div className="option-container">
+              <div className="option">
+                <Image
+                  src="/image/polygon.png"
+                  alt="polygon"
+                  height={21}
+                  width={21}
+                />{" "}
+                <p>POLYGON</p>
+              </div>
+              <div className="option">
+                <Image
+                  src="/image/apple-pay.png"
+                  alt="apple-pay"
+                  height={21}
+                  width={21}
+                />{" "}
+                <p>Apple Pay</p>
+              </div>
+              <div className="option">
+                <Image
+                  src="/image/ethereum.png"
+                  alt="ethereum"
+                  height={21}
+                  width={21}
+                />{" "}
+                <p>ETH</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-12">
+            <div className="provile-header-container"></div>
+          </div>
+        </div>
+        <div className="profile-container-bottom">
+          <CommonBtn2 btnlabel="Save" />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Profile;

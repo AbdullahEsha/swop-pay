@@ -76,6 +76,9 @@ body {
   border: none;
   color: #fff;
 }
+.col-12 {
+  width: 100%;
+}
 .col-6 {
   width: 50%;
 }
@@ -1184,6 +1187,31 @@ input[type="radio"]:checked {
 
 /* ============================= About Page Start =========================== */
 
+.about-page-container {
+  margin: 50px 0px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+.about-page-container h1 {
+  text-align: center;
+  margin: 0px;
+  font-weight: 600;
+}
+.about-page-container p {
+  text-align: center;
+  margin: 10px 0px;
+}
+.about-image-container {
+  text-align: center;
+  padding: 15px;
+}
+.about-image-container h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
 /* ============================= About Page End ============================= */
 
 /* ============================= Invoice Page Start ========================= */
@@ -1271,3 +1299,58 @@ input[type="radio"]:checked {
 }
 
 /* ============================= Order Page End ========================= */
+
+/* ============================= Profile Page Start ==================== */
+
+.profile-container {
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 25px;
+}
+.profile-container .row .col-6,
+.profile-container .row .col-12 {
+  padding: 10px;
+}
+.option-container {
+  display: flex;
+  gap: 10px;
+}
+.option-container .option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: #f2f2f2;
+  width: -webkit-fill-available;
+  padding: 5px;
+  border-radius: 5px;
+}
+.option-container .option p {
+  margin: 0px;
+}
+.profile-container h4 {
+  margin: 10px 0px 5px;
+  font-weight: 500;
+}
+.profile-container input[type="text"] {
+  width: 100%;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+.profile-container input[type="text"]:focus {
+  outline: none;
+}
+.provile-header-container {
+  height: 100px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+.profile-container-bottom {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+/* ============================= Profile Page End ==================== */
