@@ -17,6 +17,8 @@ const Profile = () => {
             <input type="text" placeholder="Input text here" />
             <h4>Shipping Cost</h4>
             <input type="text" placeholder="Input text here" />
+            <h4>Select File</h4>
+            <input type="file" className="profile-container-fill" />
           </div>
           <div className="col-6">
             <h4>Email</h4>
@@ -29,7 +31,7 @@ const Profile = () => {
             <input type="text" placeholder="Input text here" />
             <h4>Acceptable Blockchains For Payment</h4>
             <div className="option-container">
-              <div className="option">
+              <div className="option active">
                 <Image
                   src="/image/polygon.png"
                   alt="polygon"
@@ -68,7 +70,7 @@ const Profile = () => {
                 />{" "}
                 <p>POLYGON</p>
               </div>
-              <div className="option">
+              <div className="option active">
                 <Image
                   src="/image/apple-pay.png"
                   alt="apple-pay"
@@ -93,6 +95,13 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile-container-bottom">
+          <div>
+            <h4>Subsidize gas fee:</h4>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>{" "}
           <CommonBtn2 btnlabel="Save" />
         </div>
       </div>

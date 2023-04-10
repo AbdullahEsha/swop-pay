@@ -19,8 +19,8 @@ const Product = () => {
             <Image
               src="/image/product/product1.png"
               alt="product_image"
-              height={200}
-              width={200}
+              height={250}
+              width={250}
             />
             <Link href="/">
               <BiMessageSquareEdit size={35} color="#fff" />

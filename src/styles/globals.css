@@ -1001,6 +1001,7 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid #a7a7a7;
   padding: 5px 0px;
+  margin: 5px 0px;
 }
 .mint-new-item-in {
   width: -webkit-fill-available;
@@ -1013,14 +1014,63 @@ body {
 .mint-new-item-in p {
   margin: 0px;
 }
-.mint-new-item-collection svg {
-  width: 22px;
-}
 .create-mint-hr {
   margin: 20px 0px;
   border-top: 0.5px solid #ddd;
 }
-
+.create-mint-container h2 {
+  margin-top: 0px;
+}
+.create-mint-container h3 {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.create-mint-container p {
+  margin: 5px 0px;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+.create-mint-container label {
+  font-size: 13px;
+}
+.create-mint-container label span {
+  color: #ff0000;
+}
+.create-mint-container input {
+  width: 100%;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.create-mint-container textarea {
+  width: 100%;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.create-mint-container select {
+  width: 100%;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.mint-new-item-collection .icon-2 {
+  border: 1px solid #a0a0a0c4;
+  border-radius: 5px;
+  padding: 5px;
+}
+.mint-new-item-collection svg.icon-1 {
+  width: 22px;
+}
+.create-mint-container input:focus,
+.create-mint-container textarea:focus,
+.create-mint-container select:focus {
+  outline: none;
+}
 /* ========================================= Mint Page End ======================================== */
 
 /* ========================================== Coupon page Start ===================================  */
@@ -1343,6 +1393,13 @@ input[type="radio"]:checked {
 .profile-container input[type="text"]:focus {
   outline: none;
 }
+.profile-container-fill {
+  width: 100%;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
 .provile-header-container {
   height: 100px;
   background-color: #f2f2f2;
@@ -1351,6 +1408,72 @@ input[type="radio"]:checked {
 .profile-container-bottom {
   padding: 10px;
   display: flex;
-  justify-content: end;
+  align-items: center;
+  justify-content: space-between;
+}
+.option.active {
+  background-color: #c2ccff;
 }
 /* ============================= Profile Page End ==================== */
+
+/* ============================= Switch Start ======================== */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch .slider {
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  background-color: #ebebeb;
+}
+
+.switch .slider,
+.switch .slider:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch .slider:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+}
+
+.switch input:checked + .slider {
+  background-color: #c2ccffc9;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #c2ccffc9;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch .slider.round {
+  border-radius: 20px;
+}
+
+.switch .slider.round:before {
+  border-radius: 50%;
+}
+
+/* ============================= Switch End ======================== */

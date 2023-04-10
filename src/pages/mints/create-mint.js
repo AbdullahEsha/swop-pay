@@ -7,16 +7,18 @@ import { RiBarChart2Line } from "react-icons/ri";
 import { BiLockOpen } from "react-icons/bi";
 import { RiAlertFill } from "react-icons/ri";
 import CommonBtn2 from "@/components/CommonBtn2";
+import QrCodeScan from "@/components/QrCodeScan";
 
 const CreateMint = () => {
   return (
     <>
+      <QrCodeScan qrCode="footerQrCode.png" link="www.swopme.co" />
       <div className="create-mint-container">
         <h2>Create New Item</h2>
-        <p>
+        <label>
           <span>*</span> Required fields
-        </p>
-        <h4>Image, Video, Audio, or 3D Model * </h4>
+        </label>
+        <h3>Image, Video, Audio, or 3D Model * </h3>
         <p>
           File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG,
           GLB, GLTF. Max size: 100 MB
@@ -53,7 +55,15 @@ const CreateMint = () => {
             <h3>Properties</h3>
             <p>Textual traits that show up as rectangles</p>
           </div>
-          <AiOutlinePlus size={20} className="icon-2" />
+          <AiOutlinePlus
+            size={30}
+            className="icon-2"
+            color="#5F76EF"
+            onClick={() =>
+              (document.querySelector(".modal-qr-code-scan-out").style.display =
+                "block")
+            }
+          />
         </div>
         <div className="mint-new-item-collection">
           <AiFillStar size={20} className="icon-1" />
@@ -61,7 +71,15 @@ const CreateMint = () => {
             <h3>Properties</h3>
             <p>Textual traits that show up as rectangles</p>
           </div>
-          <AiOutlinePlus size={20} className="icon-2" />
+          <AiOutlinePlus
+            size={30}
+            className="icon-2"
+            color="#5F76EF"
+            onClick={() =>
+              (document.querySelector(".modal-qr-code-scan-out").style.display =
+                "block")
+            }
+          />
         </div>
         <div className="mint-new-item-collection">
           <RiBarChart2Line size={20} className="icon-1" />
@@ -69,7 +87,15 @@ const CreateMint = () => {
             <h3>Properties</h3>
             <p>Textual traits that show up as rectangles</p>
           </div>
-          <AiOutlinePlus size={20} className="icon-2" />
+          <AiOutlinePlus
+            size={30}
+            className="icon-2"
+            color="#5F76EF"
+            onClick={() =>
+              (document.querySelector(".modal-qr-code-scan-out").style.display =
+                "block")
+            }
+          />
         </div>
         <div className="mint-new-item-collection">
           <BiLockOpen size={20} className="icon-1" />
@@ -77,7 +103,15 @@ const CreateMint = () => {
             <h3>Properties</h3>
             <p>Textual traits that show up as rectangles</p>
           </div>
-          <AiOutlinePlus size={20} className="icon-2" />
+          <AiOutlinePlus
+            size={30}
+            className="icon-2"
+            color="#5F76EF"
+            onClick={() =>
+              (document.querySelector(".modal-qr-code-scan-out").style.display =
+                "block")
+            }
+          />
         </div>
         <div className="mint-new-item-collection">
           <RiAlertFill size={20} className="icon-1" />
@@ -85,8 +119,17 @@ const CreateMint = () => {
             <h3>Properties</h3>
             <p>Textual traits that show up as rectangles</p>
           </div>
-          <AiOutlinePlus size={20} className="icon-2" />
+          <AiOutlinePlus
+            size={30}
+            className="icon-2"
+            color="#5F76EF"
+            onClick={() =>
+              (document.querySelector(".modal-qr-code-scan-out").style.display =
+                "block")
+            }
+          />
         </div>
+
         <h3>Supply:</h3>
         <p>The number of items that can be minted. No gas cost to you!</p>
         <input type="number" />
