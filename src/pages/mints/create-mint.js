@@ -27,14 +27,14 @@ const CreateMint = () => {
         <input type="text" placeholder="Item name" />
         <h3>External link:</h3>
         <p>
-          OpenSea will include a link to this URL on this item's detail page, so
+          OpenSea will include a link to this URL on this item`s detail page, so
           that users can click to learn more about it. You are welcome to link
           to your own webpage with more details.
         </p>
         <input type="text" placeholder="Http//youtube-.com/hdksj" />
         <h3>Description:</h3>
         <p>
-          The description will be included on the item's detail page underneath
+          The description will be included on the item`s detail page underneath
           its image. Markdown syntax is supported.
         </p>
         <textarea
@@ -143,7 +143,7 @@ const CreateMint = () => {
         <h3>Freeze metadata</h3>
         <p>
           Freezing your metadata will allow you to permanently lock and store
-          all of this item's content in decentralized file storage.
+          all of this item`s content in decentralized file storage.
         </p>
         <input
           type="text"
