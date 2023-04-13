@@ -173,19 +173,7 @@ const Dashboard = () => {
               options={option.options}
               series={option.series}
               type="area"
-              width={
-                width < 1549
-                  ? width < 1249
-                    ? width < 992
-                      ? width < 768
-                        ? width < 550
-                          ? 300
-                          : 500
-                        : 700
-                      : 750
-                    : 575
-                  : 450
-              }
+              width={"100%"}
               height={260}
             />
           </div>

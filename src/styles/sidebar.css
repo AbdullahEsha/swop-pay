@@ -89,6 +89,27 @@
   width: auto;
 }
 
+@media only screen and (min-width: 1251px) and (max-width: 1550px) {
+  .side-bar {
+    width: 200px;
+  }
+  .side-bar ul li {
+    padding: 1px 15px;
+  }
+  .swop-pay-logo {
+    padding-left: 22px;
+  }
+  .travis {
+    height: 35px;
+  }
+  .footer-side-bar-travis h4 {
+    font-size: 14px;
+  }
+  .footer-side-bar-travis label {
+    font-size: 10px;
+  }
+}
+
 @media only screen and (min-width: 360px) and (max-width: 424px) {
   .dapp-cross,
   .dapp-three-line {
