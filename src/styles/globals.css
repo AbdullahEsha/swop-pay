@@ -150,9 +150,23 @@ body {
   font-size: 16px;
 }
 
+@media only screen and (min-width: 1251px) and (max-width: 1550px) {
+  .main-container {
+    margin-left: 200px;
+  }
+  .dashboard-container {
+    width: 1000px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1250px) {
   .container {
-    width: 970px;
+    width: 960px;
+  }
+  .dashboard-container {
+    width: 780px;
+  }
+  .main-container {
+    margin-left: 200px;
   }
 }
 /* ====================================== Common CSS End ========================================= */
@@ -362,15 +376,13 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 1251px) and (max-width: 1550px) {
-  .main-container {
-    margin-left: 200px;
-  }
-}
 /* ====================================== Landing Page End ===================================== */
 
 /* ====================================== Dashboard page Start ================================= */
 
+.css-duaqfz {
+  border-width: 0px !important;
+}
 .dashboard-home-card1 {
   background-color: #fff;
   box-shadow: 0px 0px 30px #dddddd75;
@@ -437,6 +449,7 @@ body {
 .dashboard-home-card1-list p {
   font-size: 14px;
 }
+
 .dashboard-home-card2 {
   background-color: #fff;
   padding: 20px;
@@ -744,12 +757,32 @@ body {
     align-self: auto;
     /* position: relative; */
   }
-  .dashboard-container {
-    width: 1000px;
-  }
 }
 
-@media only screen and (min-width: 1220px) and (max-width: 1450px) {
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .dashboard-home {
+    gap: 30px;
+  }
+  .dashboard-home-card1 {
+    width: 32%;
+  }
+  .dashboard-home-card2 {
+    width: 64%;
+  }
+  .dashboard-home-card3 {
+    width: 48%;
+  }
+  .dashboard-home-card5 {
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .commonBtn {
+    padding: 8px 40px;
+  }
+  .css-1j258k8 {
+    height: 420px;
+  }
 }
 /*=========================================== Dashboard Page End ==================================== */
 
@@ -980,7 +1013,10 @@ body {
   color: #fff;
 }
 
-@media only screen and (min-width: 1220px) and (max-width: 1450px) {
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .product-container .grid-6 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 /*=========================================== Product Page End ====================================== */
 
@@ -1122,7 +1158,10 @@ body {
   outline: none;
 }
 
-@media only screen and (min-width: 1220px) and (max-width: 1450px) {
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .mint-container .grid-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 /* ========================================= Mint Page End ======================================== */
 
