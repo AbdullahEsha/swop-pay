@@ -98,6 +98,10 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
+.table a {
+  text-decoration: none;
+  color: initial;
+}
 .table-body {
   display: flex;
   text-align: center;
@@ -449,7 +453,6 @@ body {
 .dashboard-home-card1-list p {
   font-size: 14px;
 }
-
 .dashboard-home-card2 {
   background-color: #fff;
   padding: 20px;
@@ -750,12 +753,8 @@ body {
   }
   .dashboard-home-card5-bottom {
     width: 48%;
-    /* background-color: #fff; */
-    /* box-shadow: 0px 0px 30px #dddddd75; */
-    /* border-radius: 15px; */
     padding: 20px;
     align-self: auto;
-    /* position: relative; */
   }
 }
 
@@ -795,7 +794,6 @@ body {
   margin: 50px 0px;
   position: relative;
 }
-
 /* Product Page Individual */
 .product-image-upload-top {
   position: relative;
@@ -1157,7 +1155,6 @@ body {
 .create-mint-container select:focus {
   outline: none;
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1250px) {
   .mint-container .grid-4 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1228,7 +1225,6 @@ body {
 .promocode-inside input[type="text"]:focus {
   outline: none;
 }
-
 input[type="radio"]:after {
   width: 15px;
   height: 15px;
@@ -1260,7 +1256,41 @@ input[type="radio"]:focus {
 input[type="radio"]:checked {
   border-color: #00e2b3;
 }
-
+.coupon-top-panel {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.coupon-top-panel input {
+  background-color: #f1f8ff;
+  height: 45px;
+  width: calc(100% / 2.5);
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 0;
+  font-size: 16px;
+}
+.coupon-top-panel input:focus {
+  outline: none;
+}
+.coupon-date {
+  width: 10%;
+}
+.coupon-name {
+  width: 20%;
+}
+.coupon-orderNo {
+  width: 10%;
+}
+.coupon-address {
+  width: 25%;
+}
+.coupon-url {
+  width: 25%;
+}
+.coupon-total {
+  width: 10%;
+}
 @media only screen and (min-width: 1220px) and (max-width: 1450px) {
 }
 /* ============================== Coupon Page End ============================ */
@@ -1530,20 +1560,17 @@ input[type="radio"]:checked {
   width: 45px;
   height: 20px;
 }
-
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .switch .slider {
   cursor: pointer;
   top: 0;
   right: 0;
   background-color: #ebebeb;
 }
-
 .switch .slider,
 .switch .slider:before {
   position: absolute;
@@ -1552,32 +1579,26 @@ input[type="radio"]:checked {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .switch .slider:before {
   content: "";
   height: 20px;
   width: 20px;
   background-color: #000;
 }
-
 .switch input:checked + .slider {
   background-color: #c2ccffc9;
 }
-
 .switch input:focus + .slider {
   box-shadow: 0 0 1px #c2ccffc9;
 }
-
 .switch input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 .switch .slider.round {
   border-radius: 20px;
 }
-
 .switch .slider.round:before {
   border-radius: 50%;
 }

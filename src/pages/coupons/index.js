@@ -1,10 +1,11 @@
 import { BiDownload } from "react-icons/bi";
+import Link from "next/link";
 
 const Index = () => {
   return (
     <>
       <div className="card">
-        <div className="invoice-top-panel">
+        <div className="coupon-top-panel">
           <div className="filter">
             <p>Filter</p>
             <select>
@@ -20,22 +21,24 @@ const Index = () => {
         </div>
         <div className="table">
           <div className="table-head">
-            <p className="invoice-date">Date</p>
-            <p className="invoice-orderNo">Order No</p>
-            <p className="invoice-name">Customer Name</p>
-            <p className="invoice-address">Customer Address</p>
-            <p className="invoice-url">Swop URL</p>
-            <p className="invoice-total">Total</p>
+            <p className="coupon-date">Date</p>
+            <p className="coupon-orderNo">Order No</p>
+            <p className="coupon-name">Customer Name</p>
+            <p className="coupon-address">Customer Address</p>
+            <p className="coupon-url">Swop URL</p>
+            <p className="coupon-total">Total</p>
           </div>
           {[...Array(10)].map((x, i) => (
-            <div className="table-body" key={i}>
-              <p className="invoice-date">1-2-2023</p>
-              <p className="invoice-orderNo">1009701</p>
-              <p className="invoice-name">Hamid Hasan</p>
-              <p className="invoice-address">Hamid Hasan</p>
-              <p className="invoice-url">Http//swopme.co-jdudy/sksk</p>
-              <p className="invoice-total">$24.99</p>
-            </div>
+            <Link href="/coupons/624cd765a5d835001615a6d3" key={i}>
+              <div className="table-body">
+                <p className="coupon-date">1-2-2023</p>
+                <p className="coupon-orderNo">1009701</p>
+                <p className="coupon-name">Hamid Hasan</p>
+                <p className="coupon-address">Hamid Hasan</p>
+                <p className="coupon-url">Http//swopme.co-jdudy/sksk</p>
+                <p className="coupon-total">$24.34</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
