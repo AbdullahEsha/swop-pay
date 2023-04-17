@@ -6,17 +6,44 @@ import { MdOutlineEventNote, MdSupportAgent } from "react-icons/md";
 import { RxDragHandleDots2 } from "react-icons/rx";
 import { IoTicketOutline, IoIdCardOutline } from "react-icons/io5";
 import { RiErrorWarningLine } from "react-icons/ri";
+import { CgMenuRight, CgClose } from "react-icons/cg";
 // import useWindowDimensions from "./useWindowDimensions";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const SideBar = () => {
   // const { width } = useWindowDimensions();
+  const [navitems, setNavitems] = useState(true);
   const router = useRouter();
+
+  const [show, handleShow] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll", null);
+    };
+  }, []);
+
+  console.log("test", navitems);
 
   return (
     <>
-      <div className="side-bar">
+      <div className={`${show && "navM-panel-scroll"} side-bar`}>
         <div className="side-bar-top">
+          <Image
+            src="/image/travis.png"
+            alt="travis"
+            height={66}
+            width={66}
+            className="travis"
+            id="sidebar-menu-top"
+          />
+
           <Link
             href="https://swop-pay.netlify.app"
             target="_blank"
@@ -30,7 +57,21 @@ const SideBar = () => {
               id="dashboard-logo-size"
             />
           </Link>
-          <ul>
+
+          {navitems ? (
+            <CgMenuRight
+              size={30}
+              id="sidebar-menu-top"
+              onClick={() => setNavitems(false)}
+            />
+          ) : (
+            <CgClose
+              id="sidebar-menu-top"
+              size={30}
+              onClick={() => setNavitems(true)}
+            />
+          )}
+          <ul className={`${navitems && "navitemhide"}`}>
             <li
               id={`${
                 router.pathname.split("/")[1] === "dashboard" && "active-menu"

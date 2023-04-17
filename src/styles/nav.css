@@ -24,6 +24,14 @@ a#logo-swop img {
   background-color: #060606b3 !important;
   z-index: 1;
 }
+.navM-panel-scroll {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: #ffffff79 !important;
+  z-index: 1;
+}
 .nav-panel ul {
   display: flex;
   align-items: center;
