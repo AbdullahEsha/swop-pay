@@ -236,7 +236,7 @@ const Dashboard = () => {
         <div className="dashboard-home-card4">
           <h3>Recent Orders</h3>
           <div className="dashboard-home-card4-data">
-            <Box sx={{ height: 650, width: "100%" }}>
+            <Box sx={{ height: 370, width: "100%" }}>
               <DataGrid
                 rows={rows}
                 columns={columns}

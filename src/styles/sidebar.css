@@ -180,6 +180,53 @@
     font-size: 10px;
   }
 }
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .side-bar {
+    width: 100%;
+    position: fixed;
+    height: auto;
+    z-index: 15;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 0px 0px 0px #3c3c3c63;
+  }
+  .side-bar ul li {
+    padding: 0px;
+  }
+  .side-bar ul {
+    width: 100%;
+    margin: 10px 0px 0px !important;
+  }
+  .navitemhide {
+    display: none;
+  }
+  .side-bar-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px !important;
+  }
+  .swop-pay-logo {
+    padding-left: 0px;
+  }
+  #sidebar-menu-top {
+    display: block;
+  }
+  .footer-qrcode,
+  .footer-side-bar {
+    display: none;
+  }
+  .travis {
+    height: 35px;
+  }
+  .footer-side-bar-travis h4 {
+    font-size: 14px;
+  }
+  .footer-side-bar-travis label {
+    font-size: 10px;
+  }
+}
 
 @media only screen and (min-width: 360px) and (max-width: 424px) {
   .dapp-cross,

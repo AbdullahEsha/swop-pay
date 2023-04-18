@@ -178,6 +178,25 @@ body {
   .main-container {
     margin-left: 0px;
   }
+  .dashboard-container {
+    width: auto;
+    margin: 0px 20px;
+  }
+  .commonBtn {
+    padding: 6px 35px;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .main-container {
+    margin-left: 0px;
+  }
+  .dashboard-container {
+    width: auto;
+    margin: 0px 20px;
+  }
+  .commonBtn {
+    padding: 6px 35px;
+  }
 }
 /* ====================================== Common CSS End ========================================= */
 
@@ -652,10 +671,12 @@ body {
 }
 .coupon-offer {
   display: block;
-  width: 55%;
+  width: -webkit-fill-available;
+  padding: 15px;
 }
 .coupon-dateTime {
   display: block;
+  width: 20%;
 }
 .coupon-offer p {
   margin: 0px;
@@ -787,6 +808,65 @@ body {
   }
   .css-1j258k8 {
     height: 420px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dashboard-home {
+    margin: 90px auto 50px;
+  }
+  .dashboard-home-card1 {
+    width: 30%;
+  }
+  .dashboard-home-card2 {
+    width: 64%;
+  }
+  .dashboard-home-card3 {
+    width: 47%;
+  }
+  .dashboard-home-card4 {
+    width: 47%;
+  }
+  .dashboard-home-card5 {
+    width: 100%;
+  }
+  .dashboard-home-card5-top {
+    width: 100%;
+  }
+  .dashboard-home-card5-top .grid-3 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .dashboard-home-card5-bottom {
+    align-self: auto;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .dashboard-home {
+    margin: 90px auto 50px;
+  }
+  .dashboard-home-card1 {
+    width: 100%;
+  }
+  .dashboard-home-card2 {
+    width: 100%;
+  }
+  .dashboard-home-card3 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .dashboard-home-card4 {
+    width: 100%;
+  }
+  .dashboard-home-card5 {
+    width: 100%;
+  }
+  .dashboard-home-card5-top {
+    width: 100%;
+  }
+  .coupon-dateTime {
+    width: 30%;
+  }
+  .dashboard-home-card5-bottom {
+    align-self: auto;
   }
 }
 /*=========================================== Dashboard Page End ==================================== */
@@ -1022,6 +1102,7 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
 /*=========================================== Product Page End ====================================== */
 
 /* ========================================= Mint Page Start ======================================== */

@@ -29,8 +29,6 @@ const SideBar = () => {
     };
   }, []);
 
-  console.log("test", navitems);
-
   return (
     <>
       <div className={`${show && "navM-panel-scroll"} side-bar`}>
@@ -184,28 +182,3 @@ const SideBar = () => {
 };
 
 export default SideBar;
-
-// <div className="mobilenav-menu-hidden">
-//   <Link href="/dapp-store">
-//     <FaChartPie size={20} />
-//     DApp Store
-//   </Link>
-//   <Link href="/">
-//     <BsPeopleFill size={20} /> Profile
-//   </Link>
-//   <Link href="/">
-//     <MdOutlineEventNote size={20} /> Prices
-//   </Link>
-//   <Link href="/">
-//     <RxDragHandleDots2 size={20} /> Accounting
-//   </Link>
-//   <Link href="/">
-//     <BsBoxSeam size={20} /> Swop Pay
-//   </Link>
-//   <Link href="/">
-//     <BsBoxSeam size={20} /> Mint Machine
-//   </Link>
-//   <Link href="/">
-//     <RiErrorWarningLine size={20} /> Purchase
-//   </Link>
-// </div>
