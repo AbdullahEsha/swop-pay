@@ -25,7 +25,7 @@ const MainNav = () => {
     <>
       <div
         className={`${show && "nav-panel-scroll"} nav-panel-scroll-bar ${
-          width < 992 && "nav-panel-scroll"
+          width < 992 && !navitems && "nav-panel-scroll"
         }`}
       >
         <div className="nav-panel container">
@@ -82,8 +82,8 @@ const MainNav = () => {
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
-              <li id="profile-list-icon">
-                <Link href="/#">
+              <li>
+                <Link href="/">
                   <BsPersonCircle size="25" />
                 </Link>
               </li>

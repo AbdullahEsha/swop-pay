@@ -51,22 +51,12 @@ a#logo-swop img {
   display: flex;
   cursor: pointer;
 }
-.nav-panel ul li a:after {
-  transition: all ease-in-out 0.4s;
-  background: none repeat scroll 0 0 #ffffff;
-  content: "";
-  display: block;
-  height: 1.5px;
-  width: 0;
-}
-.nav-panel ul li a:hover:after {
-  width: 100%;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav-panel {
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    padding: 20px 0px 15px;
   }
   .nav-panel ul {
     padding: 0;
