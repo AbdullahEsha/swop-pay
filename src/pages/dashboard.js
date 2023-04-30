@@ -15,7 +15,6 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 });
 
 const Dashboard = () => {
-  const { width } = useWindowDimensions();
   const [option, setOption] = useState({
     options: {
       chart: {

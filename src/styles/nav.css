@@ -48,7 +48,7 @@ a#logo-swop img {
   color: #fff;
   text-decoration: none;
   line-height: 25px;
-  display: inline-block;
+  display: flex;
   cursor: pointer;
 }
 .nav-panel ul li a:after {
@@ -61,4 +61,19 @@ a#logo-swop img {
 }
 .nav-panel ul li a:hover:after {
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-panel {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .nav-panel ul {
+    padding: 0;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 767px) {
 }

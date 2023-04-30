@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container polygon-blockchain-div">
-          <div className="row">
+          <div className="row reverse">
             <div className="col-6">
               <Image
                 src="/image/polygon-matic-badge.png"
@@ -190,7 +190,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container send-link-div">
-          <div className="row">
+          <div className="row reverse">
             <div className="col-6">
               <Image
                 src="/image/swop-pay-image.png"

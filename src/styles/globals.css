@@ -185,6 +185,12 @@ body {
   .commonBtn {
     padding: 6px 35px;
   }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .container {
+    width: 750px;
+  }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
   .main-container {
@@ -410,8 +416,105 @@ body {
     background-size: contain;
     width: 70%;
   }
+  .card-how-it h5 {
+    font-size: 18px;
+  }
+  .card-how-it p {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-div-top-inside {
+    padding-top: 80px;
+    color: #fff;
+    text-align: center;
+  }
+  .banner-div-top-inside .col-6 {
+    width: 100%;
+  }
+  #crypto-payment-mobile {
+    width: 90%;
+    margin-top: 55px;
+  }
+  .polygon-blockchain-div {
+    background-image: radial-gradient(
+      farthest-corner at 381px -95px,
+      #c598eb -15%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    padding-right: 0px;
+    border-radius: 35px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .polygon-blockchain-div .col-6 {
+    width: 100%;
+  }
+  .dashboard-div {
+    background-image: radial-gradient(
+      farthest-corner at 375px 85px,
+      #e1e6fc 35%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding-left: 0px;
+    border-radius: 35px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .dashboard-div .col-6 {
+    width: 100%;
+  }
+  #swop-dashboard {
+    width: 80%;
+    height: auto;
+    left: 0%;
+    transform: translateX(0%);
+    border-radius: 15px;
+    box-shadow: -6px 7px 20px #b7b7b73d;
+    margin: 30px 0px;
+  }
+  .home-how-it-work .col-4 {
+    width: 100%;
+  }
+  .card-how-it {
+    width: 375px;
+    height: 85%;
+  }
+  .background-level {
+    display: none;
+  }
+  .number-icon {
+    display: block;
+    margin: 15px 0px 10px;
+    height: 50px;
+    width: auto;
+  }
+  .send-link-div {
+    background-image: radial-gradient(
+      farthest-corner at 1170px 135px,
+      #e4ecf1 -30%,
+      rgba(255, 255, 255, 0) 35%
+    );
+    padding-right: 0px;
+    border-radius: 10px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .send-link-div .col-6 {
+    width: 100%;
+  }
+  .transaction img {
+    height: 60px;
+  }
+  .transaction h3 {
+    font-size: 18px;
+  }
+  .transaction p {
+    font-size: 11px;
+  }
+  .transaction {
+    padding: 50px 0px;
+  }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
 }
