@@ -261,7 +261,7 @@ body {
     margin: 0px 20px;
   }
   .commonBtn {
-    padding: 6px 35px;
+    padding: 6px 25px;
   }
   .reverse {
     flex-direction: column-reverse;
@@ -1375,6 +1375,72 @@ body {
   }
   .dashboard-home-card5-bottom {
     align-self: auto;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .dashboard-home {
+    margin: 90px auto 50px;
+  }
+  .dashboard-home-card1 {
+    width: 100%;
+  }
+  .dashboard-home-card2 {
+    width: 100%;
+  }
+  .dashboard-home-card3 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .dashboard-home-card4 {
+    width: 100%;
+  }
+  .dashboard-home-card5 {
+    width: 100%;
+  }
+  .dashboard-home-card5-top {
+    width: 100%;
+  }
+  .coupon-dateTime {
+    width: 30%;
+  }
+  .dashboard-home-card5-bottom {
+    align-self: auto;
+  }
+  .dashboard-home-card5-top .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .dashboard-home {
+    margin: 90px auto 50px;
+  }
+  .dashboard-home-card1 {
+    width: 100%;
+  }
+  .dashboard-home-card2 {
+    width: 100%;
+  }
+  .dashboard-home-card3 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .dashboard-home-card4 {
+    width: 100%;
+  }
+  .dashboard-home-card5 {
+    width: 100%;
+  }
+  .dashboard-home-card5-top {
+    width: 100%;
+  }
+  .coupon-dateTime {
+    width: 30%;
+  }
+  .dashboard-home-card5-bottom {
+    align-self: auto;
+  }
+  .dashboard-home-card5-top .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
