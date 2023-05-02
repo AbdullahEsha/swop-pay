@@ -66,4 +66,46 @@ a#logo-swop img {
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
+  .nav-panel {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .nav-panel ul {
+    padding: 0;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .nav-panel {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .nav-panel ul {
+    padding: 0;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+  a#logo-swop img {
+    height: 25px;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .nav-panel {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .nav-panel ul {
+    padding: 0;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+  a#logo-swop img {
+    height: 25px;
+    width: auto;
+  }
 }

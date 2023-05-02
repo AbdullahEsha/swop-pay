@@ -107,3 +107,82 @@
     margin-top: 30px;
   }
 }
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .footer-inform-content {
+    margin-top: 30px;
+  }
+  .footer-same {
+    margin-top: 30px;
+    width: 40%;
+  }
+  .footer-mid {
+    text-align: center;
+  }
+  .footer-out {
+    padding: 0px 0px 30px;
+  }
+  #footer-link-bottom {
+    padding-top: 0px;
+  }
+  .footer-link {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .footer-inform-content {
+    margin-top: 30px;
+  }
+  .footer-same {
+    margin-top: 30px;
+    width: 44%;
+  }
+  .footer-mid {
+    text-align: center;
+  }
+  .footer-out {
+    padding: 0px 0px 30px;
+  }
+  #footer-link-bottom {
+    padding-top: 0px;
+  }
+  .footer-link {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .footer-inform-content {
+    margin-top: 30px;
+    text-align: -webkit-center;
+    width: 100%;
+  }
+  .footer-same {
+    margin-top: 30px;
+    width: 48%;
+  }
+  .footer-mid {
+    text-align: center;
+  }
+  .footer-out {
+    padding: 0px 0px 30px;
+  }
+  #footer-link-bottom {
+    padding-top: 0px;
+  }
+  .footer-link {
+    margin-top: 20px;
+  }
+  img#footerSwop-logo {
+    height: 25px;
+    width: auto;
+  }
+  .footer-first-content img {
+    height: 80px;
+  }
+  .footer-bottom {
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+  .footer-mid a {
+    font-size: 12px;
+  }
+}

@@ -154,6 +154,9 @@ body {
   font-weight: 600;
   font-size: 16px;
 }
+.hide-pc-view {
+  display: none;
+}
 
 @media only screen and (min-width: 1251px) and (max-width: 1550px) {
   .main-container {
@@ -175,6 +178,9 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
   .main-container {
     margin-left: 0px;
   }
@@ -188,11 +194,17 @@ body {
   .reverse {
     flex-direction: column-reverse;
   }
-  .container {
-    width: 750px;
+  .hide-mobile-view {
+    display: none;
+  }
+  .hide-pc-view {
+    display: block;
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
+  .container {
+    width: 520px;
+  }
   .main-container {
     margin-left: 0px;
   }
@@ -202,6 +214,64 @@ body {
   }
   .commonBtn {
     padding: 6px 35px;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .hide-mobile-view {
+    display: none;
+  }
+  .hide-pc-view {
+    display: block;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .container {
+    width: 430px;
+  }
+  .main-container {
+    margin-left: 0px;
+  }
+  .dashboard-container {
+    width: auto;
+    margin: 0px 20px;
+  }
+  .commonBtn {
+    padding: 6px 35px;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .hide-mobile-view {
+    display: none;
+  }
+  .hide-pc-view {
+    display: block;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .container {
+    width: 345px;
+  }
+  .main-container {
+    margin-left: 0px;
+  }
+  .dashboard-container {
+    width: auto;
+    margin: 0px 20px;
+  }
+  .commonBtn {
+    padding: 6px 35px;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .hide-mobile-view {
+    display: none;
+  }
+  .hide-pc-view {
+    display: block;
+    font-size: 14px;
   }
 }
 /* ====================================== Common CSS End ========================================= */
@@ -406,7 +476,6 @@ body {
   -webkit-text-stroke: 0.8px #000;
   -webkit-text-fill-color: #fff;
 }
-.hide-pc-view,
 .number-icon {
   display: none;
 }
@@ -520,8 +589,330 @@ body {
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
+  .banner-div-top-inside {
+    padding-top: 80px;
+    color: #fff;
+    text-align: center;
+  }
+  .banner-div-top-inside .col-6 {
+    width: 100%;
+  }
+  #crypto-payment-mobile {
+    width: 90%;
+    margin-top: 55px;
+  }
+  .polygon-blockchain-div {
+    background-image: radial-gradient(
+      farthest-corner at 381px -95px,
+      #c598eb -15%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    padding-right: 0px;
+    border-radius: 35px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .polygon-blockchain-div .col-6 {
+    width: 100%;
+  }
+  #polygon-matic-badge {
+    width: 50%;
+  }
+  .dashboard-div {
+    background-image: radial-gradient(
+      farthest-corner at 375px 85px,
+      #e1e6fc 35%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding-left: 0px;
+    border-radius: 35px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .dashboard-div .col-6 {
+    width: 100%;
+  }
+  #swop-dashboard {
+    width: 50%;
+    height: auto;
+    left: 0%;
+    transform: translateX(0%);
+    border-radius: 15px;
+    box-shadow: -6px 7px 20px #b7b7b73d;
+    margin: 30px 0px;
+  }
+  .home-how-it-work .col-4 {
+    width: 100%;
+  }
+  .card-how-it {
+    width: 375px;
+    height: 85%;
+  }
+  .background-level {
+    display: none;
+  }
+  .number-icon {
+    display: block;
+    margin: 15px 0px 10px;
+    height: 50px;
+    width: auto;
+  }
+  .send-link-div {
+    background-image: radial-gradient(
+      farthest-corner at 1170px 135px,
+      #e4ecf1 -30%,
+      rgba(255, 255, 255, 0) 35%
+    );
+    padding-right: 0px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .send-link-div .col-6 {
+    width: 100%;
+  }
+  .transaction img {
+    height: 60px;
+  }
+  .transaction h3 {
+    font-size: 18px;
+  }
+  .transaction p {
+    font-size: 11px;
+  }
+  .transaction {
+    padding: 50px 0px;
+  }
 }
-
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .banner-div-top-inside {
+    padding-top: 80px;
+    color: #fff;
+    text-align: center;
+  }
+  .banner-div-top-inside .col-6 {
+    width: 100%;
+  }
+  #crypto-payment-mobile {
+    width: 90%;
+    margin-top: 55px;
+  }
+  .polygon-blockchain-div {
+    background-image: radial-gradient(
+      farthest-corner at 381px -95px,
+      #c598eb -15%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    padding-right: 0px;
+    border-radius: 35px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .polygon-blockchain-div .col-6 {
+    width: 100%;
+  }
+  #polygon-matic-badge {
+    width: 50%;
+  }
+  .dashboard-div {
+    background-image: radial-gradient(
+      farthest-corner at 375px 85px,
+      #e1e6fc 35%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding-left: 0px;
+    border-radius: 35px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .dashboard-div .col-6 {
+    width: 100%;
+  }
+  #swop-dashboard {
+    width: 50%;
+    height: auto;
+    left: 0%;
+    transform: translateX(0%);
+    border-radius: 15px;
+    box-shadow: -6px 7px 20px #b7b7b73d;
+    margin: 30px 0px;
+  }
+  .home-how-it-work .col-4 {
+    width: 100%;
+  }
+  .card-how-it {
+    width: 375px;
+    height: 85%;
+  }
+  .background-level {
+    display: none;
+  }
+  .number-icon {
+    display: block;
+    margin: 15px 0px 10px;
+    height: 50px;
+    width: auto;
+  }
+  .send-link-div {
+    background-image: radial-gradient(
+      farthest-corner at 1170px 135px,
+      #e4ecf1 -30%,
+      rgba(255, 255, 255, 0) 35%
+    );
+    padding-right: 0px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .send-link-div .col-6 {
+    width: 100%;
+  }
+  .transaction div {
+    width: 30%;
+  }
+  .transaction img {
+    height: 40px;
+  }
+  .transaction h3 {
+    font-size: 13px;
+  }
+  .transaction p {
+    font-size: 9px;
+  }
+  .transaction {
+    padding: 25px 0px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .banner-div-top-inside {
+    padding-top: 80px;
+    color: #fff;
+    text-align: center;
+  }
+  .banner-div-top-inside .col-6 {
+    width: 100%;
+  }
+  #crypto-payment-mobile {
+    width: 90%;
+    margin-top: 55px;
+  }
+  .polygon-blockchain-div {
+    background-image: radial-gradient(
+      farthest-corner at 381px -95px,
+      #c598eb -15%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    padding-right: 0px;
+    border-radius: 35px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .polygon-blockchain-div .col-6 {
+    width: 100%;
+  }
+  #polygon-matic-badge {
+    width: 50%;
+  }
+  .dashboard-div {
+    background-image: radial-gradient(
+      farthest-corner at 375px 85px,
+      #e1e6fc 35%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding-left: 0px;
+    border-radius: 35px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .dashboard-div .col-6 {
+    width: 100%;
+  }
+  #swop-dashboard {
+    width: 50%;
+    height: auto;
+    left: 0%;
+    transform: translateX(0%);
+    border-radius: 15px;
+    box-shadow: -6px 7px 20px #b7b7b73d;
+    margin: 30px 0px;
+  }
+  .home-how-it-work .col-4 {
+    width: 100%;
+  }
+  .card-how-it {
+    width: 310px;
+    height: 88%;
+  }
+  .background-level {
+    display: none;
+  }
+  .number-icon {
+    display: block;
+    margin: 15px 0px 10px;
+    height: 40px;
+    width: auto;
+  }
+  .send-link-div {
+    background-image: radial-gradient(
+      farthest-corner at 1170px 135px,
+      #e4ecf1 -30%,
+      rgba(255, 255, 255, 0) 35%
+    );
+    padding-right: 0px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .send-link-div .col-6 {
+    width: 100%;
+  }
+  .transaction div {
+    width: 30%;
+  }
+  .transaction img {
+    height: 40px;
+  }
+  .transaction h3 {
+    font-size: 13px;
+  }
+  .transaction p {
+    font-size: 9px;
+  }
+  .transaction {
+    padding: 25px 0px;
+  }
+  /*  */
+  .banner-div-top-inside h1 {
+    font-size: 25px;
+  }
+  .banner-div-top-inside p {
+    font-size: 14px;
+  }
+  .polygon-blockchain-content h2 {
+    font-size: 25px;
+  }
+  .polygon-blockchain-content p {
+    font-size: 14px;
+  }
+  .swop-dashboard-content h2 {
+    font-size: 25px;
+  }
+  .swop-dashboard-content p {
+    font-size: 14px;
+  }
+  .home-how-it-work h2 {
+    font-size: 25px;
+  }
+  .send-link-content h2 {
+    font-size: 25px;
+  }
+  .card-how-it p {
+    font-size: 14px;
+  }
+  .send-link-content p {
+    font-size: 14px;
+  }
+}
 /* ====================================== Landing Page End ===================================== */
 
 /* ====================================== Dashboard page Start ================================= */
