@@ -38,7 +38,7 @@ const Profile = () => {
                   height={21}
                   width={21}
                 />{" "}
-                <p>POLYGON</p>
+                <p>Polygon</p>
               </div>
               <div className="option">
                 <Image
@@ -68,7 +68,7 @@ const Profile = () => {
                   height={21}
                   width={21}
                 />{" "}
-                <p>POLYGON</p>
+                <p>Polygon</p>
               </div>
               <div className="option active">
                 <Image

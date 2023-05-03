@@ -952,6 +952,9 @@ body {
 .css-duaqfz {
   border-width: 0px !important;
 }
+.css-1usso8h-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+  border: none;
+}
 .dashboard-home-card1 {
   background-color: #fff;
   box-shadow: 0px 0px 30px #dddddd75;
@@ -1433,7 +1436,7 @@ body {
     width: 100%;
   }
   .coupon-dateTime {
-    width: 30%;
+    width: 42%;
   }
   .dashboard-home-card5-bottom {
     align-self: auto;
@@ -1466,13 +1469,16 @@ body {
     width: 100%;
   }
   .coupon-dateTime {
-    width: 30%;
+    width: 78%;
   }
   .dashboard-home-card5-bottom {
     align-self: auto;
   }
   .dashboard-home-card5-top .grid-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .dashboard-home-card2 h4 {
+    font-size: 20px;
   }
 }
 
@@ -2243,8 +2249,78 @@ input[type="radio"]:checked {
   background-color: #c2ccff;
 }
 
-@media only screen and (min-width: 1220px) and (max-width: 1450px) {
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .option-container .option p {
+    font-size: 13px;
+  }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile-container {
+    margin: 90px auto 50px;
+  }
+  .profile-container .col-6 {
+    width: 100%;
+    padding: 0px !important;
+  }
+  .profile-container .col-12 {
+    padding: 0px !important;
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .profile-container {
+    margin: 90px auto 50px;
+  }
+  .profile-container .col-6 {
+    width: 100%;
+    padding: 0px !important;
+  }
+  .profile-container .col-12 {
+    padding: 0px !important;
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .profile-container {
+    margin: 90px auto 50px;
+    padding: 15px;
+  }
+  .profile-container .col-6 {
+    width: 100%;
+    padding: 0px !important;
+  }
+  .profile-container .col-12 {
+    padding: 0px !important;
+    margin-top: 25px;
+  }
+  .option-container .option p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .profile-container {
+    margin: 90px auto 50px;
+    padding: 15px;
+  }
+  .profile-container .col-6 {
+    width: 100%;
+    padding: 0px !important;
+  }
+  .profile-container .col-12 {
+    padding: 0px !important;
+    margin-top: 25px;
+  }
+  .option-container .option p {
+    font-size: 10px;
+  }
+  .option-container .option {
+    gap: 5px;
+  }
+  .profile-container h4 {
+    font-size: 12px;
+  }
+}
+
 /* ============================= Profile Page End ==================== */
 
 /* ============================= Switch Start ======================== */
