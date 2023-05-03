@@ -434,11 +434,11 @@ body {
 }
 .home-how-it-work h2 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .home-networking h2 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .background-level {
   background: url("/image/backgroundlevel.png") no-repeat center;
@@ -603,11 +603,11 @@ body {
   }
   .polygon-blockchain-div {
     background-image: radial-gradient(
-      farthest-corner at 381px -95px,
-      #c598eb -15%,
-      rgba(255, 255, 255, 0) 72%
+      farthest-corner at 220px 82px,
+      #cf9cf9 -110%,
+      rgba(255, 255, 255, 0) 82%
     );
-    padding-right: 0px;
+    padding: 15px;
     border-radius: 35px;
     margin-top: 25px;
     text-align: center;
@@ -624,7 +624,7 @@ body {
       #e1e6fc 35%,
       rgba(255, 255, 255, 0) 100%
     );
-    padding-left: 0px;
+    padding: 15px;
     border-radius: 35px;
     margin-top: 50px;
     text-align: center;
@@ -683,6 +683,9 @@ body {
   .transaction {
     padding: 50px 0px;
   }
+  .transaction div {
+    width: 31%;
+  }
 }
 @media only screen and (min-width: 451px) and (max-width: 550px) {
   .banner-div-top-inside {
@@ -699,14 +702,41 @@ body {
   }
   .polygon-blockchain-div {
     background-image: radial-gradient(
-      farthest-corner at 381px -95px,
-      #c598eb -15%,
-      rgba(255, 255, 255, 0) 72%
+      farthest-corner at 220px 82px,
+      #cf9cf9 -110%,
+      rgba(255, 255, 255, 0) 100%
     );
-    padding-right: 0px;
     border-radius: 35px;
     margin-top: 25px;
     text-align: center;
+    padding: 15px;
+  }
+  .banner-div-top-inside h1 {
+    font-size: 30px;
+  }
+  .banner-div-top-inside p {
+    font-size: 16px;
+  }
+  .polygon-blockchain-content h2 {
+    font-size: 26px;
+  }
+  .polygon-blockchain-content p {
+    font-size: 15px;
+  }
+  .swop-dashboard-content h2 {
+    font-size: 26px;
+  }
+  .swop-dashboard-content p {
+    font-size: 16px;
+  }
+  .home-how-it-work h2 {
+    font-size: 26px;
+  }
+  .send-link-content h2 {
+    font-size: 26px;
+  }
+  .send-link-content p {
+    font-size: 16px;
   }
   .polygon-blockchain-div .col-6 {
     width: 100%;
@@ -798,14 +828,14 @@ body {
   }
   .polygon-blockchain-div {
     background-image: radial-gradient(
-      farthest-corner at 381px -95px,
-      #c598eb -15%,
-      rgba(255, 255, 255, 0) 72%
+      farthest-corner at 220px 82px,
+      #cf9cf9 -110%,
+      rgba(255, 255, 255, 0) 100%
     );
-    padding-right: 0px;
     border-radius: 35px;
     margin-top: 25px;
     text-align: center;
+    padding: 15px;
   }
   .polygon-blockchain-div .col-6 {
     width: 100%;
@@ -819,7 +849,7 @@ body {
       #e1e6fc 35%,
       rgba(255, 255, 255, 0) 100%
     );
-    padding-left: 0px;
+    padding: 15px;
     border-radius: 35px;
     margin-top: 50px;
     text-align: center;
@@ -881,7 +911,6 @@ body {
   .transaction {
     padding: 25px 0px;
   }
-  /*  */
   .banner-div-top-inside h1 {
     font-size: 25px;
   }
@@ -889,25 +918,28 @@ body {
     font-size: 14px;
   }
   .polygon-blockchain-content h2 {
-    font-size: 25px;
+    font-size: 21px;
   }
   .polygon-blockchain-content p {
     font-size: 14px;
   }
   .swop-dashboard-content h2 {
-    font-size: 25px;
+    font-size: 21px;
   }
   .swop-dashboard-content p {
     font-size: 14px;
   }
   .home-how-it-work h2 {
-    font-size: 25px;
+    font-size: 21px;
+  }
+  .card-how-it h5 {
+    font-size: 18px;
   }
   .send-link-content h2 {
-    font-size: 25px;
+    font-size: 21px;
   }
   .card-how-it p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .send-link-content p {
     font-size: 14px;

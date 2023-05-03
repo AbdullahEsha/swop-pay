@@ -66,9 +66,13 @@ a#logo-swop img {
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
+  a#logo-swop {
+    display: flex;
+  }
   .nav-panel {
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    padding: 18px 0px;
   }
   .nav-panel ul {
     padding: 0;
@@ -78,9 +82,13 @@ a#logo-swop img {
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 550px) {
+  a#logo-swop {
+    display: flex;
+  }
   .nav-panel {
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    padding: 18px 0px;
   }
   .nav-panel ul {
     padding: 0;
@@ -94,9 +102,13 @@ a#logo-swop img {
   }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
+  a#logo-swop {
+    display: flex;
+  }
   .nav-panel {
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    padding: 18px 0px;
   }
   .nav-panel ul {
     padding: 0;
