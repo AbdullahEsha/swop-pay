@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f2f2f2;
 }
 * {
@@ -441,7 +441,7 @@ body {
   font-weight: 700;
 }
 .background-level {
-  background: url("/image/backgroundlevel.png") no-repeat center;
+  background: url('/image/backgroundlevel.png') no-repeat center;
   background-size: cover;
   height: 50px;
   width: 71%;
@@ -1905,9 +1905,9 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-.promocode-inside input[type="text"],
-.promocode-inside input[type="date"],
-.promocode-inside input[type="file"] {
+.promocode-inside input[type='text'],
+.promocode-inside input[type='date'],
+.promocode-inside input[type='file'] {
   padding: 8px 20px;
   width: 100%;
   background-color: #f2f2f2;
@@ -1922,11 +1922,11 @@ body {
   border: 0.5px solid #ebebeb;
 }
 .promocode-inside textarea:focus,
-.promocode-inside input[type="date"]:focus,
-.promocode-inside input[type="text"]:focus {
+.promocode-inside input[type='date']:focus,
+.promocode-inside input[type='text']:focus {
   outline: none;
 }
-input[type="radio"]:after {
+input[type='radio']:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -1934,27 +1934,27 @@ input[type="radio"]:after {
   left: -1px;
   position: relative;
   background-color: #ffffff;
-  content: "";
+  content: '';
   display: inline-block;
   visibility: visible;
   border: 1px solid rgb(184, 184, 184);
 }
-input[type="radio"]:checked:after {
+input[type='radio']:checked:after {
   background: #00e2b3;
   box-shadow: 0px 0px 0.2rem #00e2b5c7;
   border: 2px solid rgb(255, 255, 255);
 }
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   background: #00e2b3;
   border-color: #00e2b3;
 }
-input[type="checkbox"]:focus {
+input[type='checkbox']:focus {
   border-color: #00e2b3;
 }
-input[type="radio"]:focus {
+input[type='radio']:focus {
   border-color: #00e2b3;
 }
-input[type="radio"]:checked {
+input[type='radio']:checked {
   border-color: #00e2b3;
 }
 .coupon-top-panel {
@@ -2132,7 +2132,32 @@ input[type="radio"]:checked {
   width: 10%;
 }
 
-@media only screen and (min-width: 1220px) and (max-width: 1450px) {
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .option-container .option p {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile-container {
+    margin: 90px auto 50px;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .profile-container {
+    margin: 90px auto 50px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .profile-container {
+    margin: 90px auto 50px;
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .profile-container {
+    margin: 90px auto 50px;
+    padding: 15px;
+  }
 }
 /* ============================= Invoice Page End ========================= */
 
@@ -2217,14 +2242,14 @@ input[type="radio"]:checked {
   margin: 10px 0px 5px;
   font-weight: 500;
 }
-.profile-container input[type="text"] {
+.profile-container input[type='text'] {
   width: 100%;
   border: none;
   background-color: #f2f2f2;
   padding: 10px;
   border-radius: 5px;
 }
-.profile-container input[type="text"]:focus {
+.profile-container input[type='text']:focus {
   outline: none;
 }
 .profile-container-fill {
@@ -2351,7 +2376,7 @@ input[type="radio"]:checked {
   transition: 0.4s;
 }
 .switch .slider:before {
-  content: "";
+  content: '';
   height: 20px;
   width: 20px;
   background-color: #000;
