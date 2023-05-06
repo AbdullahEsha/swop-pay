@@ -224,6 +224,20 @@ body {
   .hide-pc-view {
     display: block;
   }
+  .filter select {
+    width: 82px;
+  }
+  .filter button {
+    width: 82px;
+    font-size: 13px;
+  }
+  .table {
+    overflow-x: auto;
+  }
+  .table-head,
+  .table-body {
+    width: 650px;
+  }
 }
 @media only screen and (min-width: 451px) and (max-width: 550px) {
   .container {
@@ -247,6 +261,21 @@ body {
   }
   .hide-pc-view {
     display: block;
+  }
+  .filter select {
+    width: 82px;
+  }
+  .filter button {
+    width: 82px;
+    font-size: 13px;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+  .table-head,
+  .table-body {
+    width: 650px;
   }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
@@ -2169,11 +2198,17 @@ input[type='radio']:checked {
     margin: 90px auto 50px;
     padding: 15px;
   }
+  .invoice-top-panel {
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .profile-container {
     margin: 90px auto 50px;
     padding: 15px;
+  }
+  .invoice-top-panel {
+    justify-content: center;
   }
 }
 /* ============================= Invoice Page End ========================= */
