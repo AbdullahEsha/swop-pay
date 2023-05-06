@@ -273,6 +273,23 @@ body {
     display: block;
     font-size: 14px;
   }
+  .filter select {
+    width: 62px;
+  }
+  .filter button {
+    width: 62px;
+    font-size: 13px;
+  }
+  .filter button svg {
+    display: none;
+  }
+  .table {
+    overflow-x: auto;
+  }
+  .table-head,
+  .table-body {
+    width: 650px;
+  }
 }
 /* ====================================== Common CSS End ========================================= */
 
