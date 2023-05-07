@@ -49,7 +49,7 @@ const Product = () => {
         </div>
         <div className="product-view">
           <div className="grid-5">
-            {[...Array(6)].map((x, i) => (
+            {[...Array(4)].map((x, i) => (
               <ProductCard
                 key={i}
                 id="624cd765a5d835001615a6d3"
@@ -85,14 +85,14 @@ const Product = () => {
               <div className="variant-title-text">
                 <label>*Color:</label> <div className="color-red" />
                 <div className="color-green" />
-                <button>Delete Variant</button>
+                <button>Delete</button>
               </div>
               <div className="variant-title-text">
                 <label>*Size:</label>
                 <div className="size">M</div>
                 <div className="size">L</div>
                 <div className="size">XL</div>
-                <button>Delete Variant</button>
+                <button>Delete</button>
               </div>
               <button className="add-variant">Add Variant</button>
             </div>

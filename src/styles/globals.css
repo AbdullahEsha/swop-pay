@@ -1648,7 +1648,7 @@ body {
 }
 .product-name-textarea {
   width: 100%;
-  height: 80%;
+  height: 82%;
   border: none;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -1773,18 +1773,64 @@ body {
   box-shadow: 0px 0px 20px #e4e4e452;
   color: #fff;
 }
-
+@media only screen and (min-width: 1251px) and (max-width: 1550px) {
+  .product-view .grid-5 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1250px) {
   .product-container .grid-6 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .product-view .grid-5 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .product-info-subject {
+    font-size: 11px;
+    width: 65px;
+  }
+  .variant-title-text button {
+    font-size: 12px;
+  }
+  .product-image-upload {
+    width: 42%;
+  }
+  .product-view {
+    width: 56%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .product-container .grid-6 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .product-container {
+  .product-container,
+  .product-upload-container {
     margin: 90px 0px 50px;
+  }
+  .product-view .grid-5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .product-info-subject {
+    font-size: 11px;
+    width: 58px;
+  }
+  .product-info-decision label {
+    font-size: 12px;
+  }
+  .variant-title-text button {
+    font-size: 12px;
+  }
+  .product-image-upload {
+    width: 52%;
+  }
+  .product-view {
+    width: 47%;
+  }
+  .variant-title-text label {
+    font-size: 11px;
+  }
+  .add-variant {
+    margin-top: 10px;
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
@@ -1794,6 +1840,53 @@ body {
   .product-container {
     margin: 90px 0px 50px;
   }
+  .product-upload-container {
+    margin: 90px 0px 25px;
+    gap: 20px;
+  }
+  .product-view .grid-5 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .product-upload-container-2 h3 {
+    margin: 8px 0px;
+  }
+  .product-name,
+  .product-unit-price,
+  .product-quantity {
+    width: 100%;
+  }
+  .product-info-subject {
+    font-size: 14px;
+    width: 120px;
+  }
+  .product-info-decision label {
+    font-size: 12px;
+  }
+  .variant-title-text button {
+    font-size: 12px;
+  }
+  .product-image-upload {
+    width: 100%;
+  }
+  .product-view {
+    width: 100%;
+  }
+  .variant-title-text label {
+    font-size: 14px;
+  }
+  .product-description-card {
+    padding: 40px;
+  }
+  .product-name-textarea {
+    width: 100%;
+    height: 85%;
+  }
+  .product-description-card h5 {
+    font-size: 18px;
+  }
+  .add-variant {
+    margin-top: 10px;
+  }
 }
 @media only screen and (min-width: 451px) and (max-width: 550px) {
   .product-container .grid-6 {
@@ -1802,6 +1895,58 @@ body {
   .product-container {
     margin: 90px 0px 50px;
   }
+  .product-upload-container {
+    margin: 90px 0px 25px;
+    gap: 20px;
+  }
+  .product-view .grid-5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .product-upload-container-2 h3 {
+    margin: 8px 0px;
+  }
+  .product-name,
+  .product-unit-price,
+  .product-quantity {
+    width: 100%;
+  }
+  .product-info-subject {
+    font-size: 14px;
+    width: 120px;
+  }
+  .product-info-decision label {
+    font-size: 12px;
+  }
+  .variant-title-text button {
+    font-size: 12px;
+  }
+  .product-image-upload {
+    width: 100%;
+  }
+  .product-view {
+    width: 100%;
+  }
+  .variant-title-text label {
+    font-size: 14px;
+  }
+  .product-description-card {
+    padding: 10px 10px 30px;
+  }
+  .product-name-textarea {
+    width: 100%;
+    height: 85%;
+  }
+  .product-description-card h5 {
+    font-size: 18px;
+  }
+  .add-variant {
+    margin-top: 10px;
+  }
+  .product-upload-container-3 {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .product-container .grid-6 {
@@ -1809,6 +1954,58 @@ body {
   }
   .product-container {
     margin: 90px 0px 50px;
+  }
+  .product-upload-container {
+    margin: 90px 0px 25px;
+    gap: 20px;
+  }
+  .product-view .grid-5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .product-upload-container-2 h3 {
+    margin: 8px 0px;
+  }
+  .product-name,
+  .product-unit-price,
+  .product-quantity {
+    width: 100%;
+  }
+  .product-info-subject {
+    font-size: 14px;
+    width: 120px;
+  }
+  .product-info-decision label {
+    font-size: 12px;
+  }
+  .variant-title-text button {
+    font-size: 12px;
+  }
+  .product-image-upload {
+    width: 100%;
+  }
+  .product-view {
+    width: 100%;
+  }
+  .variant-title-text label {
+    font-size: 14px;
+  }
+  .product-description-card {
+    padding: 5px 10px 29px;
+  }
+  .product-name-textarea {
+    width: 100%;
+    height: 85%;
+  }
+  .product-description-card h5 {
+    font-size: 18px;
+  }
+  .add-variant {
+    margin-top: 10px;
+  }
+  .product-upload-container-3 {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
 }
 
