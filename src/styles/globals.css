@@ -1508,6 +1508,14 @@ body {
   .dashboard-home-card5-top .grid-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .modal-qr-code-scan {
+    padding: 25px;
+    width: 440px;
+  }
+  .modal-qr-code-scan button {
+    bottom: 30px;
+    right: 108px;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .dashboard-home {
@@ -1543,6 +1551,17 @@ body {
   }
   .dashboard-home-card2 h4 {
     font-size: 20px;
+  }
+  .modal-qr-code-scan h2 {
+    font-size: 22px;
+  }
+  .modal-qr-code-scan {
+    padding: 25px;
+    width: 340px;
+  }
+  .modal-qr-code-scan button {
+    bottom: 30px;
+    right: 58px;
   }
 }
 
