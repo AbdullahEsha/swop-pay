@@ -6,16 +6,22 @@ const About = () => {
       <div className="about-page-container">
         <h1>Futuristic Features</h1>
         <p class="hide-mobile-view">
-          Our app is completely free to download and includes all the necessary
-          tools to create and launch a website. We also offer a variety of
+          Swop offers a variety of services in our free app. While our app is
+          free and provides a business or creator with essential
           <br />
-          premium features such as token powered sites, custom QR codes,
-          complimentary NFC for a one-year subscription
+          tools they need to grow and expand. We also offer a paid subscription
+          that provides various add-ons
           <br />
-          and advanced analytics. These features can help take your website to
-          the next
+          like token powered sites that will allow you to take your relationship
           <br />
-          level and make it easier to share with the world.
+          with your following to the next level.
+        </p>
+        <p class="hide-pc-view">
+          Swop offers a variety of services in our free app. While our app is
+          free and provides a business or creator with essential tools they need
+          to grow and expand. We also offer a paid subscription that provides
+          various add-ons like token powered sites that will allow you to take
+          your relationship with your following to the next level.
         </p>
         <div className="row">
           <div className="col-6">

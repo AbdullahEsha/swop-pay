@@ -176,6 +176,12 @@ body {
   .main-container {
     margin-left: 200px;
   }
+  .hide-mobile-view {
+    display: none;
+  }
+  .hide-pc-view {
+    display: block;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -1955,16 +1961,20 @@ body {
   .mint-container .grid-4 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .mint-container {
+  .mint-container,
+  .create-mint-container {
     margin: 90px 0px 50px;
+    padding: 20px 12%;
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
   .mint-container .grid-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .mint-container {
+  .mint-container,
+  .create-mint-container {
     margin: 90px 0px 50px;
+    padding: 20px 8%;
   }
   .mint-card h3 {
     font-size: 20px;
@@ -1974,16 +1984,20 @@ body {
   .mint-container .grid-4 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .mint-container {
+  .mint-container,
+  .create-mint-container {
     margin: 90px 0px 50px;
+    padding: 20px 7%;
   }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .mint-container .grid-4 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .mint-container {
+  .mint-container,
+  .create-mint-container {
     margin: 90px 0px 50px;
+    padding: 20px 5%;
   }
 }
 /* ========================================= Mint Page End ======================================== */
@@ -2243,6 +2257,9 @@ input[type="radio"]:checked {
     height: 100%;
     margin: 90px auto 50px;
   }
+  .contact-container h1 {
+    font-size: 31px;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .contact-container {
@@ -2261,6 +2278,9 @@ input[type="radio"]:checked {
   .contact-container-out {
     height: 100%;
     margin: 90px auto 50px;
+  }
+  .contact-container h1 {
+    font-size: 23px;
   }
 }
 /* ============================= Contact Page End =========================== */
@@ -2298,20 +2318,32 @@ input[type="radio"]:checked {
   .about-page-container {
     margin: 90px 0px 50px;
   }
+  .about-page-container .col-6 {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
   .about-page-container {
     margin: 90px 0px 50px;
+  }
+  .about-page-container .col-6 {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 451px) and (max-width: 550px) {
   .about-page-container {
     margin: 90px 0px 50px;
   }
+  .about-page-container .col-6 {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .about-page-container {
     margin: 90px 0px 50px;
+  }
+  .about-page-container .col-6 {
+    width: 100%;
   }
 }
 /* ============================= About Page End ============================= */

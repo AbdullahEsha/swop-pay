@@ -19,7 +19,7 @@ const Index = () => {
             />
           ))}
         </div>
-        <CommonBtn url="/add-product" btnlabel="Add Product" />
+        <CommonBtn url="/product/add-product" btnlabel="Add Product" />
       </div>
     </>
   );
