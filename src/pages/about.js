@@ -5,7 +5,7 @@ const About = () => {
     <>
       <div className="about-page-container">
         <h1>Futuristic Features</h1>
-        <p class="hide-mobile-view">
+        <p className="hide-mobile-view">
           Swop offers a variety of services in our free app. While our app is
           free and provides a business or creator with essential
           <br />
@@ -16,7 +16,7 @@ const About = () => {
           <br />
           with your following to the next level.
         </p>
-        <p class="hide-pc-view">
+        <p className="hide-pc-view">
           Swop offers a variety of services in our free app. While our app is
           free and provides a business or creator with essential tools they need
           to grow and expand. We also offer a paid subscription that provides

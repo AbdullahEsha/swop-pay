@@ -97,9 +97,9 @@ const Profile = () => {
         <div className="profile-container-bottom">
           <div>
             <h4>Subsidize gas fee:</h4>
-            <label class="switch">
+            <label className="switch">
               <input type="checkbox" />
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </label>
           </div>{" "}
           <CommonBtn2 btnlabel="Save" />

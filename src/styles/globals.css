@@ -2527,8 +2527,11 @@ input[type="radio"]:checked {
   font-weight: 600;
   margin-bottom: 0px;
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .about-image-container img {
+    width: auto;
+    height: 325px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-page-container {
@@ -2536,6 +2539,11 @@ input[type="radio"]:checked {
   }
   .about-page-container .col-6 {
     width: 100%;
+    height: auto;
+  }
+  .about-image-container img {
+    width: 45%;
+    height: auto;
   }
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
@@ -2545,6 +2553,10 @@ input[type="radio"]:checked {
   .about-page-container .col-6 {
     width: 100%;
   }
+  .about-image-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (min-width: 451px) and (max-width: 550px) {
   .about-page-container {
@@ -2553,6 +2565,10 @@ input[type="radio"]:checked {
   .about-page-container .col-6 {
     width: 100%;
   }
+  .about-image-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .about-page-container {
@@ -2560,6 +2576,10 @@ input[type="radio"]:checked {
   }
   .about-page-container .col-6 {
     width: 100%;
+  }
+  .about-image-container img {
+    width: 100%;
+    height: auto;
   }
 }
 /* ============================= About Page End ============================= */
