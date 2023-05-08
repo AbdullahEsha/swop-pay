@@ -59,8 +59,8 @@ body {
 .commonBtn {
   background-image: linear-gradient(to right, #55b6ff, #797eff);
   position: absolute;
-  bottom: -18px;
-  padding: 8px 50px;
+  bottom: -15px;
+  padding: 3px 35px;
   border-radius: 5px;
   left: 50%;
   transform: translateX(-50%);
@@ -68,6 +68,7 @@ body {
 .commonBtn a {
   text-decoration: none;
   color: #fff;
+  font-size: 12px;
 }
 .commonBtn2 {
   background-image: linear-gradient(to right, #55b6ff, #797eff);
@@ -1083,7 +1084,7 @@ body {
   border-bottom-right-radius: 10px;
 }
 .dashboard-home-card1-list p {
-  font-size: 14px;
+  font-size: 12px;
 }
 .dashboard-home-card2 {
   background-color: #fff;
@@ -1152,6 +1153,7 @@ body {
 }
 .dashboard-home-card3-product-name b {
   font-weight: 500;
+  font-size: 14px;
 }
 .dashboard-home-card3 {
   background-color: #fff;
@@ -1171,9 +1173,10 @@ body {
   padding: 5px;
   border-radius: 8px;
   font-weight: 400;
+  font-size: 13px;
 }
 .dashboard-home-card3-exp span {
-  font-size: 14px;
+  font-size: 13px;
 }
 .dashboard-home-card4 {
   background-color: #fff;
@@ -1210,6 +1213,9 @@ body {
   padding: 20px;
   align-self: flex-end;
   position: relative;
+}
+.dashboard-home-card5-bottom h3 {
+  margin: 0px;
 }
 .product-card {
   padding: 10px;
@@ -1283,12 +1289,12 @@ body {
 }
 .coupon-dateTime {
   display: block;
-  width: 20%;
+  width: 23%;
 }
 .coupon-offer p {
   margin: 0px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
 }
 .coupon-offer label {
   font-size: 11px;
@@ -1660,10 +1666,10 @@ body {
 .product-description-card {
   box-shadow: 0px 0px 30px #8686862c;
   background-color: #fff;
-  padding: 15px;
   margin-top: 35px;
   border-radius: 15px;
   height: 62.6%;
+  padding: 15px 15px 25px;
 }
 .product-name-textarea {
   width: 100%;
@@ -1673,12 +1679,10 @@ body {
   border-radius: 10px;
   padding: 10px;
   display: grid;
+  resize: none;
 }
 .product-description-card h5 {
   margin: 5px 0px 15px;
-}
-.product-description-card {
-  padding: 15px;
 }
 .variant-title-text {
   display: flex;
@@ -1802,7 +1806,7 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .product-view .grid-5 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .product-info-subject {
     font-size: 11px;
@@ -1812,10 +1816,10 @@ body {
     font-size: 12px;
   }
   .product-image-upload {
-    width: 42%;
+    width: 54%;
   }
   .product-view {
-    width: 56%;
+    width: 44%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1827,7 +1831,7 @@ body {
     margin: 90px 0px 50px;
   }
   .product-view .grid-5 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .product-info-subject {
     font-size: 11px;
@@ -1840,10 +1844,11 @@ body {
     font-size: 12px;
   }
   .product-image-upload {
-    width: 52%;
+    width: 100%;
   }
   .product-view {
-    width: 47%;
+    width: 100%;
+    margin-top: 45px;
   }
   .variant-title-text label {
     font-size: 11px;

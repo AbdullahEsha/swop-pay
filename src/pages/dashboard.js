@@ -140,23 +140,23 @@ const Dashboard = () => {
           <div className="dashboard-home-card1-list-container">
             <div className="dashboard-home-card1-list odd first">
               <p>Instant</p>
-              <BsPlusLg size={20} />
+              <BsPlusLg size={18} />
             </div>
             <div className="dashboard-home-card1-list even">
               <p>Invoice</p>
-              <BsPlusLg size={20} />
+              <BsPlusLg size={18} />
             </div>
             <div className="dashboard-home-card1-list odd">
               <p>Product</p>
-              <BsPlusLg size={20} />
+              <BsPlusLg size={18} />
             </div>
             <div className="dashboard-home-card1-list even">
               <p>Mint</p>
-              <BsPlusLg size={20} />
+              <BsPlusLg size={18} />
             </div>
             <div className="dashboard-home-card1-list odd last">
               <p>Discount Code</p>
-              <BsPlusLg size={20} />
+              <BsPlusLg size={18} />
             </div>
           </div>
         </div>
@@ -278,6 +278,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="dashboard-home-card5-bottom">
+            <h3>Coupons</h3>
             <div className="coupon-field">
               <Image
                 src="/image/coupon.png"
@@ -313,7 +314,10 @@ const Dashboard = () => {
               </div>
             </div>
             <br />
-            <CommonBtn btnlabel={"Add More"} url={"/add-more"} />
+            <CommonBtn
+              btnlabel={"Create Coupon"}
+              url={"/coupons/create-coupon"}
+            />
           </div>
         </div>
       </div>

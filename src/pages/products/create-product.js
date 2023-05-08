@@ -9,7 +9,7 @@ import ProductCard from "@/components/ProductCard";
 import QrCodeScan from "@/components/QrCodeScan";
 import useWindowDimensions from "@/components/useWindowDimensions";
 
-const Product = () => {
+const CreateProduct = () => {
   const { width } = useWindowDimensions();
 
   return (
@@ -192,4 +192,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default CreateProduct;
