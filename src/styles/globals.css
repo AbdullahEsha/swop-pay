@@ -60,7 +60,7 @@ body {
   background-image: linear-gradient(to right, #55b6ff, #797eff);
   position: absolute;
   bottom: -15px;
-  padding: 3px 35px;
+  padding: 3px 20px;
   border-radius: 5px;
   left: 50%;
   transform: translateX(-50%);
@@ -1372,6 +1372,9 @@ body {
   top: 10px;
   cursor: pointer;
 }
+#dashboard-travis {
+  display: none;
+}
 
 @media only screen and (min-width: 1251px) and (max-width: 1550px) {
   .dashboard-home-card1 {
@@ -1481,6 +1484,57 @@ body {
   .dashboard-home-card5-bottom {
     align-self: auto;
   }
+  #dashboard-travis {
+    display: block;
+    height: 85px;
+    width: auto;
+  }
+  #dashboard-travis-main {
+    display: none;
+  }
+  .dashboard-home-card1 {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0px;
+    justify-content: space-between;
+    gap: initial;
+  }
+  .dashboard-home-card1-inside {
+    display: flex;
+    background-color: #fff;
+    height: 100%;
+    align-items: center;
+    width: 55%;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #b9b9b9e3;
+  }
+  .dashboard-home-card1-list-container {
+    width: 40%;
+    box-shadow: 0px 0px 30px #b9b9b9e3;
+    border-radius: 15px;
+  }
+  .dashboard-home-card1-list p {
+    font-size: 10px;
+  }
+  .dashboard-home-card1-list {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+  }
+  .dashboard-home-card1-list svg {
+    height: 11px;
+    width: auto;
+    margin-top: -1px;
+  }
+  .dashboard-home-card1-inside .dashboard-home-card1-button button {
+    font-size: 11px;
+  }
+  .dashboard-home-card1-inside .dashboard-home-card1-button {
+    gap: 5px;
+  }
 }
 @media only screen and (min-width: 451px) and (max-width: 550px) {
   .dashboard-home {
@@ -1522,13 +1576,59 @@ body {
     bottom: 30px;
     right: 108px;
   }
+  #dashboard-travis {
+    display: block;
+  }
+  #dashboard-travis-main {
+    display: none;
+  }
+  .dashboard-home-card1 {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0px;
+    justify-content: space-between;
+    gap: initial;
+  }
+  .dashboard-home-card1-inside {
+    display: flex;
+    background-color: #fff;
+    height: 100%;
+    align-items: center;
+    width: 55%;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #b9b9b9e3;
+  }
+  .dashboard-home-card1-list-container {
+    width: 40%;
+    box-shadow: 0px 0px 30px #b9b9b9e3;
+    border-radius: 15px;
+  }
+  .dashboard-home-card1-list p {
+    font-size: 10px;
+  }
+  .dashboard-home-card1-list {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+  }
+  .dashboard-home-card1-list svg {
+    height: 11px;
+    width: auto;
+    margin-top: -1px;
+  }
+  .dashboard-home-card1-inside .dashboard-home-card1-button button {
+    font-size: 11px;
+  }
+  .dashboard-home-card1-inside .dashboard-home-card1-button {
+    gap: 5px;
+  }
 }
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .dashboard-home {
     margin: 90px auto 50px;
-  }
-  .dashboard-home-card1 {
-    width: 100%;
   }
   .dashboard-home-card2 {
     width: 100%;
@@ -1568,6 +1668,55 @@ body {
   .modal-qr-code-scan button {
     bottom: 30px;
     right: 58px;
+  }
+  #dashboard-travis {
+    display: block;
+  }
+  #dashboard-travis-main {
+    display: none;
+  }
+  .dashboard-home-card1 {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0px;
+    justify-content: space-between;
+    gap: initial;
+  }
+  .dashboard-home-card1-inside {
+    display: flex;
+    background-color: #fff;
+    height: 100%;
+    align-items: center;
+    width: 55%;
+    gap: 5px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #b9b9b9e3;
+  }
+  .dashboard-home-card1-list-container {
+    width: 40%;
+    box-shadow: 0px 0px 30px #b9b9b9e3;
+    border-radius: 15px;
+  }
+  .dashboard-home-card1-list p {
+    font-size: 10px;
+  }
+  .dashboard-home-card1-list {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+  }
+  .dashboard-home-card1-list svg {
+    height: 11px;
+    width: auto;
+    margin-top: -1px;
+  }
+  .dashboard-home-card1-inside .dashboard-home-card1-button button {
+    font-size: 11px;
+  }
+  .dashboard-home-card1-inside .dashboard-home-card1-button {
+    gap: 5px;
   }
 }
 

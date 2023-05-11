@@ -183,7 +183,6 @@ const CreateProduct = () => {
           >
             <BsQrCode size={20} />
           </button>
-
           <input type="button" value="Copy URL" />
           <input type="button" value="Export" />
         </div>

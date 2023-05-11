@@ -127,15 +127,30 @@ const Dashboard = () => {
     <>
       <div className="dashboard-home">
         <div className="dashboard-home-card1">
-          <Image src="/image/travis.png" alt="travis" height={66} width={66} />
+          <Image
+            src="/image/travis.png"
+            alt="travis"
+            height={66}
+            width={66}
+            id="dashboard-travis-main"
+          />
           <div className="dashboard-home-card1-inside">
-            <h5>Travis Herron</h5>
-            <p>$travisherron</p>
-            <div className="dashboard-home-card1-button">
-              <button>Copy</button>
-              <button>QR</button>
+            <Image
+              src="/image/travis.png"
+              alt="travis"
+              height={66}
+              width={66}
+              id="dashboard-travis"
+            />
+            <div>
+              <h5>Travis Herron</h5>
+              <p>$travisherron</p>
+              <div className="dashboard-home-card1-button">
+                <button>Copy</button>
+                <button>QR</button>
+              </div>
+              <h6>Charolotte, NC</h6>
             </div>
-            <h6>Charolotte, NC</h6>
           </div>
           <div className="dashboard-home-card1-list-container">
             <div className="dashboard-home-card1-list odd first">
